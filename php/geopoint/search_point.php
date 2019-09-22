@@ -1,6 +1,5 @@
-<?php require "../../php/require/check_auth.php";?>
-<?php require "../../php/config/config.php"; ?>
-
+<?php require $_SERVER["DOCUMENT_ROOT"] . "/php/auth/check_auth.php";?>
+<?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
 
 <?php
 	$geopointName = $_POST['geopointName'];

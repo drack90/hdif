@@ -7,6 +7,8 @@ if(isset($_SESSION['user_login']) ) { //проверяется существо�
     }
 
 }else{
-    header('location: php/require/login.php');
+    $severroot = $_SERVER["DOCUMENT_ROOT"];
+
+    header('location: http://hdif/php/require/login.php');
 }
 ?>

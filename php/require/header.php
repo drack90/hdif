@@ -1,3 +1,4 @@
+<? session_start(); ?>
 <body id="page-top">
 <!-- Navigation -->
 
@@ -21,9 +22,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Геоточки</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="<?$_SERVER["DOCUMENT_ROOT"];?>/php/geopoint/add_point.php">Добавить Геоточку</a>
-                        <a class="dropdown-item" href="<?$_SERVER["DOCUMENT_ROOT"];?>/php/geopoint/point_search.php">Поиск геоточки</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="<?$_SERVER["DOCUMENT_ROOT"];?>/php/geopoint/geopoint.php">Добавить Геоточку</a>
+                        <a class="dropdown-item" href="<?$_SERVER["DOCIMENT_ROOT"];?>/php/geopoint/point_search_page.php">Поиск геоточки</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

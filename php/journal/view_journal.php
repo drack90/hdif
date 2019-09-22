@@ -1,20 +1,40 @@
 <!-- Данный блок должен отображаться посредством php с пометкой о новом сообщении и новой новости. -->
+<div id="journal_content">
+<?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
+
+<?php require $_SERVER["DOCUMENT_ROOT"] . "/php/class/priorityColor.php"; ?>
+
+<?php
+
+    $sqljournal = "SELECT * FROM journal ORDER BY id DESC LIMIT 3";
+
+    //$stmt->bindValue(':name', '%' . $geopointName . '%');
+    $stmt = $pdo->prepare($sqljournal);
+    $stmt->execute();
+?>
 
 <div class="row">
     <div class="col"></div>
 
     <div class="col-10">
-        <div class="card-title text-center text-primary"><span class="h3">Журнал изменений</span> </div>
+        <div class="card-title text-center text-primary"><span class="h3">Журнал изменений</span>
+        </div><?php
 
-            <div class="card bg-silver-gray " id="lending"> <!-- анимация появления -->
+
+
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $priority = $row['priority'];
+    ?>
+
+
+            <div class="card <? $val = new priorityColor;
+                             echo $val->colorSelect($priority);
+
+            ?> " id="lending"> <!-- анимация появления -->
                 <div class="media">
-<!--                    <img src="--><?//$_SERVER["DOCUMENT_ROOT"];?><!--/img/avatar.jpg" class="mr-3" alt="..." style="width: 64px; height: 64px;">-->
                     <div class="media-body">
-
-
-
-                                <a class="text-black-50">19.09.2019 15:17UTC</a>
-                                <span>На момент написания сообщения, было решено отправлять в Усинске - все данные по факту поданному в заявке.</span>
+                        <a class="text-black-50"><?php print_r($row['date']);?></a>
+                        <span><? print_r($row["text"]);?></span>
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"  data-toggle="Close" data-placement="top" title="закрыть">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -24,43 +44,23 @@
             </div>
             <hr>
 
-        <div class="card bg-alert " id="lending"> <!-- анимация появления -->
-                <div class="media">
-                    <!--                    <img src="--><?//$_SERVER["DOCUMENT_ROOT"];?><!--/img/avatar.jpg" class="mr-3" alt="..." style="width: 64px; height: 64px;">-->
-                    <div class="media-body">
+            <?php
+}
 
-                            <a class="text-black-50">19.09.2019 15:17UTC</a>
-                            <span> Рейсы <b>9990,9977,9710</b> от 13.09.2019 <strong>Не брать!</strong> Поданы с ошибкой!</span>
-                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"  data-toggle="Close" data-placement="top" title="закрыть">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                </div>
-        </div>
-        <hr>
+?>
 
-        <div class="card bg-silver-gray " id="lending"> <!-- анимация появления -->
-                <div class="media">
-                    <img src="<?$_SERVER["DOCUMENT_ROOT"];?>/img/avatar.jpg" class="mr-3" alt="..." style="width: 64px; height: 64px; opacity: 50%;">
-                    <div class="media-body">
-                        <a class="text-black-50">18.09.2019 08:17UTC</a>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"  data-toggle="Close" data-placement="top" title="закрыть">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <p>Очередная запретная зона в Усинске, перекрыта снизу от Харьяги, высота 90 метром, но все равно просят ставить план в обход зоны.</p>
-                        <a class="text-red">в противном случае, план будут отменяться</a>
-                    </div>
-                </div>
-
-            </div>
         <div class="row">
             <div class="col-10"></div>
             <div class="col-2 float-right flex-column">
                 <form class="form-inline my-2 my-md-2">
-                    <button class="btn btn-sm btn-primary">Читать далее <span class="badge badge-danger">3</span></button>
+                    <button type="button" class="btn btn-sm btn-primary" id="readMoreJournal" >Читать далее <span class="badge badge-danger">3</span></button>
                 </form>
+
+
+                        <!-- button 2 -->
                 <form class="form-inline my-2 my-md-2">
-                    <button class="btn btn-sm btn-success">Добавить запись </button>
+                    <button class="btn btn-sm btn-success" data-toggle="modal" data-target="#addJournalPostModal">Добавить запись </button>
+
             </div>
             <div class="col"></div>
         </div>
@@ -70,6 +70,52 @@
 
 
 </div>
+<!-- modal -->
+<div class="modal fade" id="addJournalPostModal" tabindex="-1" role="dialog" aria-labelledby="addJournalPostLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Добавить запись</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="addJournalPost" name="addJournalPost">
+                <div class="modal-body" id="modalBody">
+
+                        <textarea class="form-control" id="textPost" rows="3" name="textPost" data-focus="modal" required></textarea>
+
+                        <div class="form-group">
+                            <label for="priorityLevel">Уровень важности информации</label>
+                            <select class="form-control" id="priorityLevel" name="priorityLevel">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+
+
+                    <div class="hide">
+                        <textarea class="text-hide" id="authorID" name="authorID"><?echo $_SESSION['user_login']; ?></textarea>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary" id="accessButtonJournal">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+</div>
+<div id="results"></div>
+
+    <script src="/js/joгurnal_js/journal_ajax.js"></script>
+    <script src="/js/joгurnal_js/journal_refresh.js"></script>
 
 
 

@@ -6592,12 +6592,16 @@ button.bg-dark:focus {
 }
 
 .bg-silver-gray {
-  background-color: #e7f2f9 !important;
+  background-color: #f5f9e1 !important;
 }
 
 .bg-alert {
   background-color: #f9d8dd !important;
 }
+.bg-success2 {
+  background-color: #b1f9c0 !important;
+}
+
 
 .bg-transparent {
   background-color: transparent !important;

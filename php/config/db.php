@@ -21,9 +21,9 @@ if ($connection == false)
 
 $driver = 'mysql';
 $host = 'localhost';
-$db_name = 'cb39858_hdif';
-$db_user = 'cb39858_hdif';
-$db_password = 'JinsUd6ottyu';
+$db_name = 'hdif';
+$db_user = 'root';
+$db_password = '';
 $charset = 'utf8';
 $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
 //ERRMODE_EXCEPTION - ошибки будут вызывать исключения и остановку скрипта

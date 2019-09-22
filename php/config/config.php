@@ -1,13 +1,12 @@
-<?php session_start(); ?>
 <?php
 
 $config = array(
     'title' => 'How do I fly',
     'db' => array(
         'server' => 'localhost',
-        'username' => 'cb39858_hdif',
-        'password' => 'JinsUd6ottyu',
-        'db_name' => 'cb39858_hdif'
+        'username' => 'root',
+        'password' => '',
+        'db_name' => 'hdif'
     )
 );
 

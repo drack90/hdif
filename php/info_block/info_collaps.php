@@ -1,3 +1,7 @@
+<?php require $_SERVER["DOCUMENT_ROOT"] . "/php/auth/check_auth.php";?>
+
+
+
 <div class="row">
     <div class="col"></div>
     <div class="col-10">
@@ -130,72 +134,3 @@
 
     <br>
 
-<!--<div class="row">-->
-<!--<div class="col"></div>-->
-<!--<div class="col-10">-->
-<!--    <div class="card-group">-->
-<!--        <div class="card">-->
-<!--            <img class="card-img-top" src="/img/mi8_small.jpg" alt="Card image cap">-->
-<!--            <div class="card-body">-->
-<!--                <h5 class="card-title">Усинск</h5>-->
-<!--                <p class="card-text">Учебное пособие по дирекции "Усинск" в которой перечисленны особенности данной дирекции и прописаны принципы, по которым формирутся план.</p>-->
-<!--                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-<!--            </div>-->
-<!--            <div class="card-footer text-right">-->
-<!--                <a href="#" class="btn btn-primary">Далее</a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="card">-->
-<!--            <img class="card-img-top" src="/img/mi8.png" alt="Card image cap">-->
-<!--            <div class="card-body">-->
-<!--                <h5 class="card-title">Сургут, Лянтор</h5>-->
-<!--                <p class="card-text">Информация по формированию </p>-->
-<!--                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-<!--            </div>-->
-<!--            <div class="card-footer text-right">-->
-<!--                <a href="#" class="btn btn-primary">Далее</a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="card">-->
-<!--            <img class="card-img-top" src="/img/mi8_small.jpg" alt="Card image cap">-->
-<!--            <div class="card-body">-->
-<!--                <h5 class="card-title">Название карточки</h5>-->
-<!--                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>-->
-<!--                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-<!--            </div>-->
-<!--            <div class="card-footer text-right">-->
-<!--                <a href="#" class="btn btn-primary">Далее</a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<div class="col"></div>-->
-<!--</div>-->
-<!--<br>-->
-<!---->
-<!---->
-<!--<div class="row">-->
-<!--    <div class="col"></div>-->
-<!--    <div class="col-sm-5">-->
-<!--        <div class="card">-->
-<!--            <div class="card-body">-->
-<!--                <h5 class="card-title br-primary">Сургут</h5>-->
-<!--                <p class="card-text">Новые изменения касаемо подаваемых планов по дирекции "Сургут"</p>-->
-<!--                <p class="card-text">Изменения касаются рейсов которые следуют по маршрутам с Лянтора</p>-->
-<!--                <a href="#" class="btn btn-primary">Далее</a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="col-sm-5">-->
-<!--        <div class="card mb-3">-->
-<!--            <div class="card-body">-->
-<!--                <h5 class="card-title">CHG</h5>-->
-<!--                <p class="card-text">CHG - прмеру и описание</p>-->
-<!--                <p class="card-text">В каких случаях можно использовать CHG, а в каких лучше переподать план</p>-->
-<!--                <a href="#" class="btn btn-primary">Далее</a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="col"></div>-->
-<!--</div>-->
-<!--<br>-->

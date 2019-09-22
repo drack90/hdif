@@ -1,4 +1,4 @@
-<?php //require $_SERVER['DOCUMENT_ROOT'] . '/php/auth/check_auth.php';?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/auth/check_auth.php';?>
 
 <!doctype html>
 <html lang="ru">
@@ -20,15 +20,17 @@
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/header.php'; ?> <!-- Подключаем header -->
 
     <main>
+        <div id="content_block">
+<div id="journal"><?php require $_SERVER['DOCUMENT_ROOT'] . '/php/journal/view_journal.php';?>
 
-    <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/journal/view_journal.php';?>
+</div>
         <br>
-        <br>
 
-    <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/info_block/info_collaps.php';?>
+ <br>
+            <div id="info_collaps"><?php require $_SERVER['DOCUMENT_ROOT'] . '/php/info_block/info_collaps.php';?></div>
 
 
-
+</div>
     </main>
 </html>
 

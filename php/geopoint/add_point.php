@@ -1,5 +1,5 @@
 <?php
-require '../config/config.php';
+require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php";
 
 $geopoint = $_POST['geopoint'];
 $name = $_POST['name'];
