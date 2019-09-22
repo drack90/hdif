@@ -1,4 +1,5 @@
 <!-- Данный блок должен отображаться посредством php с пометкой о новом сообщении и новой новости. -->
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/requireplugins.php';?>
 <div id="journal_content">
     <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
 
@@ -55,7 +56,7 @@
 
                     <!-- button 2 -->
                     <form class="form-inline my-2 my-md-2">
-                        <button class="btn btn-success" data-toggle="modal" data-target="#addJournalPostModal">Добавить запись </button>
+                        <button class="btn btn-success" onclick="window.location='<?$_SERVER['DOCUMENT_ROOT']; ?>/index.php'">Главная страница</button>
 
                 </div>
                 <div class="col"></div>
@@ -66,47 +67,7 @@
 
 
     </div>
-    <!-- modal -->
-    <div class="modal fade" id="addJournalPostModal" tabindex="-1" role="dialog" aria-labelledby="addJournalPostLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
 
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Добавить запись</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form id="addJournalPost" name="addJournalPost">
-                    <div class="modal-body" id="modalBody">
-
-                        <textarea class="form-control" id="textPost" rows="3" name="textPost" data-focus="modal" required></textarea>
-
-                        <div class="form-group">
-                            <label for="priorityLevel">Уровень важности информации</label>
-                            <select class="form-control" id="priorityLevel" name="priorityLevel">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-
-
-                        <div class="hide">
-                            <textarea class="text-hide" id="authorID" name="authorID"><?echo $_SESSION['user_login']; ?></textarea>
-                        </div>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                        <button type="button" class="btn btn-primary" id="accessButtonJournal">Отправить</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-    </div>
 </div>
 <div id="results"></div>
 
