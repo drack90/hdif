@@ -1,8 +1,7 @@
 <!-- Данный блок должен отображаться посредством php с пометкой о новом сообщении и новой новости. -->
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/requireplugins.php';?>
 <div id="journal_content">
     <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
-
+    <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/requireplugins.php';?>
     <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/class/priorityColor.php"; ?>
 
     <?php
