@@ -53,7 +53,7 @@
             <div class="col-10"></div>
             <div class="col-2 float-right flex-column">
                 <form class="form-inline my-2 my-md-2">
-                    <button type="button" class="btn btn-sm btn-primary" id="readMoreJournal" >Читать далее <span class="badge badge-danger">3</span></button>
+                    <button type="button" class="btn btn-sm btn-primary" id="readMoreJournal" >Читать далее</button>
                 </form>
 
 

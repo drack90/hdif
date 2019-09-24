@@ -2,48 +2,48 @@
 
 
 
-<div class="row">
-    <div class="col"></div>
-    <div class="col-10">
-        <div class="card-title text-center text-primary"><span class="h3">Новые FPL</span></div>
-        <div class="card-deck">
-            <div class="card">
-                <img class="card-img-top" src="/img/holder.svg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Новый учебный материал</h5>
-                    <p class="card-text">Прошу ознакомиться с новыми изменениями в работе с меридианом.</p>
-                    <p class="card-text"><small class="text-muted">время публикации и дата</small></p>
-                </div>
-                <div class="card-footer text-right">
-                    <a href="#" class="btn btn-primary">Далее</a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="/img/holder.svg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">CHG</h5>
-                    <p class="card-text">Как подавать CHG, тонкости и особенности работы в разных ЗЦ</p>
-                    <p class="card-text"><small class="text-muted">.</small></p>
-                </div>
-                <div class="card-footer text-right">
-                    <a href="#" class="btn btn-primary">Далее</a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="/img/holder.svg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Сургут</h5>
-                    <p class="card-text">Изменения касаемые сургута, а так же учебное пособие</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-                <div class="card-footer text-right">
-                    <a href="#" class="btn btn-primary">Далее</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col"></div>
-</div>
+<!--<div class="row">-->
+<!--    <div class="col"></div>-->
+<!--    <div class="col-10">-->
+<!--        <div class="card-title text-center text-primary"><span class="h3">Новые FPL</span></div>-->
+<!--        <div class="card-deck">-->
+<!--            <div class="card">-->
+<!--                <img class="card-img-top" src="/img/holder.svg" alt="Card image cap">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Новый учебный материал</h5>-->
+<!--                    <p class="card-text">Прошу ознакомиться с новыми изменениями в работе с меридианом.</p>-->
+<!--                    <p class="card-text"><small class="text-muted">время публикации и дата</small></p>-->
+<!--                </div>-->
+<!--                <div class="card-footer text-right">-->
+<!--                    <a href="#" class="btn btn-primary">Далее</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="card">-->
+<!--                <img class="card-img-top" src="/img/holder.svg" alt="Card image cap">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">CHG</h5>-->
+<!--                    <p class="card-text">Как подавать CHG, тонкости и особенности работы в разных ЗЦ</p>-->
+<!--                    <p class="card-text"><small class="text-muted">.</small></p>-->
+<!--                </div>-->
+<!--                <div class="card-footer text-right">-->
+<!--                    <a href="#" class="btn btn-primary">Далее</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="card">-->
+<!--                <img class="card-img-top" src="/img/holder.svg" alt="Card image cap">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Сургут</h5>-->
+<!--                    <p class="card-text">Изменения касаемые сургута, а так же учебное пособие</p>-->
+<!--                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+<!--                </div>-->
+<!--                <div class="card-footer text-right">-->
+<!--                    <a href="#" class="btn btn-primary">Далее</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="col"></div>-->
+<!--</div>-->
 <hr class="">
 
 
@@ -57,7 +57,7 @@
 
             <div class="col-2">
                 <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-CHG-list"
+                    <a class="list-group-item list-group-item-action active" id="<?echo $row['tittle'];?>"
                        data-toggle="list" href="#list-CHG" role="tab" aria-controls="CHG">CHG</a>
                     <a class="list-group-item list-group-item-action" id="list-igarka-list" data-toggle="list"
                        href="#list-igarka" role="tab" aria-controls="igarka">Игарка</a>

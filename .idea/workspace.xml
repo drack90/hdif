@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="317d239a-c81f-4c82-bfa4-fa8f3eb0c4dc" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/php/class/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/journal/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/info_block/info_collaps.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/info_block/info_collaps.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/journal/view_all_journal.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/journal/view_all_journal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/journal/view_journal.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/journal/view_journal.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +30,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="78" />
+            <state relative-caret-position="493">
+              <caret line="29" column="85" lean-forward="true" selection-start-line="29" selection-start-column="85" selection-end-line="29" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -35,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/js/joгurnal_js/journal_refresh.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -43,20 +48,48 @@
       <file leaf-file-name="view_all_journal.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/journal/view_all_journal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            <state relative-caret-position="1870">
+              <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
+              <folding>
+                <element signature="e#392#394#0#PHP" expanded="true" />
+                <element signature="e#2418#2425#1#HTML" expanded="true" />
+                <marker date="1569324287452" expanded="true" signature="378:550" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_journal.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pagination.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/journal/pagination.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pagination.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/class/pagination.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1560">
+              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+              <folding>
+                <element signature="e#25#32#1" expanded="true" />
+                <element signature="e#119#126#1" expanded="true" />
+                <element signature="e#0#6#0" expanded="true" />
+                <element signature="n#__construct#0;n#Pagination#0;n#!!top" expanded="true" />
+                <element signature="n#initialize#0;n#Pagination#0;n#!!top" expanded="true" />
+                <element signature="n#createLinks#0;n#Pagination#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_journal.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/journal/view_journal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="61" column="54" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
-              <folding>
-                <element signature="e#2969#2976#1#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="198">
+              <caret line="55" column="63" lean-forward="true" selection-start-line="55" selection-start-column="63" selection-end-line="55" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -70,19 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_point.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/geopoint/add_point.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="geopoint.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/geopoint/geopoint.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="867">
               <caret line="51" selection-start-line="51" selection-end-line="63" selection-end-column="11" />
             </state>
           </provider>
@@ -91,17 +115,8 @@
       <file leaf-file-name="info_collaps.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/info_block/info_collaps.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/config/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="85">
+              <caret line="59" column="81" lean-forward="true" selection-start-line="59" selection-start-column="81" selection-end-line="59" selection-end-column="105" />
             </state>
           </provider>
         </entry>
@@ -121,6 +136,7 @@
       <find>выход</find>
       <find>bg-white</find>
       <find>читать</find>
+      <find>numrows</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,6 +146,11 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="drack90" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="hdif" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -152,7 +173,6 @@
         <option value="$PROJECT_DIR$/php/geopoint/geopoint.php" />
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/php/journal/addPostInDB.php" />
-        <option value="$PROJECT_DIR$/php/info_block/info_collaps.php" />
         <option value="$PROJECT_DIR$/js/joirnal_js/journal_ajax.js" />
         <option value="$PROJECT_DIR$/php/class/priorityColor.php" />
         <option value="$PROJECT_DIR$/js/joгurnal_js/journal_refresh.js" />
@@ -160,10 +180,14 @@
         <option value="$PROJECT_DIR$/php/require/header.php" />
         <option value="$PROJECT_DIR$/php/require/logout.php" />
         <option value="$PROJECT_DIR$/php/auth/auth.php" />
-        <option value="$PROJECT_DIR$/php/journal/view_journal.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/joгurnal_js/journal_ajax.js" />
+        <option value="$PROJECT_DIR$/php/journal/view_journal.php" />
+        <option value="$PROJECT_DIR$/php/info_block/info_collaps.php" />
+        <option value="$PROJECT_DIR$/php/journal/paginaton.php" />
+        <option value="$PROJECT_DIR$/php/journal/pagination.php" />
         <option value="$PROJECT_DIR$/php/journal/view_all_journal.php" />
+        <option value="$PROJECT_DIR$/php/class/pagination.php" />
       </list>
     </option>
   </component>
@@ -187,7 +211,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="60" />
     <option name="width" value="2400" />
     <option name="height" value="1290" />
@@ -210,17 +234,6 @@
               <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
               <item name="hdif" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="joгurnal_js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
@@ -327,6 +340,7 @@
       <workItem from="1568273922266" duration="5546000" />
       <workItem from="1568279731060" duration="13211000" />
       <workItem from="1568785822827" duration="27037000" />
+      <workItem from="1569253632312" duration="9065000" />
     </task>
     <task id="LOCAL-00001" summary="- Написан AJAX обработчик для модуля journal (автоматическое обновление через 5 минут, отправка информации в БД)&#10;- Настроена кнопка &quot;Читать все&quot;, теперь она открывает файл, в котором отображаются все строки блока Journal">
       <created>1569161190948</created>
@@ -342,39 +356,45 @@
       <option name="project" value="LOCAL" />
       <updated>1569165359908</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавлена кнопка &quot;на главную страницу&quot;">
+      <created>1569253662565</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569253662565</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48627000" />
+    <option name="totallyTimeSpent" value="57692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="36" width="1550" height="835" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19335938" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32904148" />
-      <window_info anchor="bottom" id="Messages" weight="0.32963988" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" weight="0.23288591" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32963988" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32963988" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19335938" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" weight="0.23288591" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32825485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32963988" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="SQL Generator" order="12" weight="0.32904148" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="13" weight="0.32904148" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.2832618" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="13" weight="0.32904148" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.2832618" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32825485" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32963988" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,20 +451,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/auth/check_auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/info_block/info_collaps.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -501,9 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25568">
           <caret line="1504" column="62" selection-start-line="1504" selection-start-column="55" selection-end-line="1504" selection-end-column="62" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -511,9 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179724">
           <caret line="10572" column="22" selection-start-line="10572" selection-start-column="22" selection-end-line="10572" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -549,9 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179724">
           <caret line="10572" column="22" lean-forward="true" selection-start-line="10572" selection-start-column="22" selection-end-line="10572" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,9 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179520">
           <caret line="10572" column="22" selection-start-line="10572" selection-start-column="22" selection-end-line="10572" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -590,9 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25500">
           <caret line="1504" column="62" selection-start-line="1504" selection-start-column="55" selection-end-line="1504" selection-end-column="62" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -686,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/info_block/info_collaps.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -723,15 +707,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/geopoint/geopoint.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="867">
           <caret line="51" selection-start-line="51" selection-end-line="63" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/joгurnal_js/journal_ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
@@ -742,33 +719,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/journal/view_all_journal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/joгurnal_js/journal_refresh.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="85" lean-forward="true" selection-start-line="29" selection-start-column="85" selection-end-line="29" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/info_block/info_collaps.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="59" column="81" lean-forward="true" selection-start-line="59" selection-start-column="81" selection-end-line="59" selection-end-column="105" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/journal/view_journal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="61" column="54" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
+        <state relative-caret-position="198">
+          <caret line="55" column="63" lean-forward="true" selection-start-line="55" selection-start-column="63" selection-end-line="55" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/joгurnal_js/journal_ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/journal/pagination.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/journal/view_all_journal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1870">
+          <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
           <folding>
-            <element signature="e#2969#2976#1#HTML" expanded="true" />
+            <element signature="e#392#394#0#PHP" expanded="true" />
+            <element signature="e#2418#2425#1#HTML" expanded="true" />
+            <marker date="1569324287452" expanded="true" signature="378:550" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/class/pagination.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1560">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="e#25#32#1" expanded="true" />
+            <element signature="e#119#126#1" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="n#__construct#0;n#Pagination#0;n#!!top" expanded="true" />
+            <element signature="n#initialize#0;n#Pagination#0;n#!!top" expanded="true" />
+            <element signature="n#createLinks#0;n#Pagination#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
