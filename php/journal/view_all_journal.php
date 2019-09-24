@@ -21,7 +21,7 @@
 
 
 
-    $limit = 5;
+    $limit = 25; //количество записей на страницу
     $offset = !empty($_GET['page'])?(($_GET['page']-1)*$limit):0;
     //получаем количество записей
     $queryNum = ("SELECT COUNT(*) as id FROM journal");
@@ -84,7 +84,7 @@
 
                             <!-- button 2 -->
                             <form class="form-inline my-2 my-md-2">
-                                <button class="btn btn-success" onclick="window.location='<?//$_SERVER['DOCUMENT_ROOT']; ?>/index.php'">Главная страница</button>
+                                <a class="btn btn-success" href="<?$_SERVER['DOCUMENT_ROOT']; ?>/index.php">Главная страница</a>
 
                         </div>
                         <div class="col"></div>
