@@ -6,7 +6,7 @@
 
 <?php
 
-    $sqljournal = "SELECT * FROM journal ORDER BY id DESC LIMIT 3";
+    $sqljournal = "SELECT * FROM journal ORDER BY id DESC LIMIT 5";
 
     //$stmt->bindValue(':name', '%' . $geopointName . '%');
     $stmt = $pdo->prepare($sqljournal);
