@@ -99,7 +99,6 @@
         </div>
 
 <div id="results"></div>
-        </div>
         <!-- отображаем ссылки на страницы -->
 <div class="row">
     <div class="col-3"></div>
@@ -116,7 +115,7 @@
     </div>
     <div class="col-3"></div>
 </div>
-
+<script src="/js/joгurnal_js/journal_ajax.js"></script>
 
 
 
@@ -124,7 +123,6 @@
 
 
 <script src="/js/joгurnal_js/journal_ajax.js"></script>
-<script src="/js/joгurnal_js/journal_refresh.js"></script>
 
 
 
