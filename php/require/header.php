@@ -1,4 +1,5 @@
 <? session_start(); ?>
+
 <body id="page-top">
 <!-- Navigation -->
 
@@ -14,7 +15,7 @@
                     <a class="nav-link" href="<?$_SERVER["DOCUMENT_ROOT"];?>/index.php">Главная <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?$_SERVER["DOCUMENT_ROOT"];?>/php/addfpl/findFplpage.php"> FPL </a>
+                    <a class="nav-link" id="findFplPage" href="#"> FPL </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="modal" data-target=".bd-example-modal-lg">Добавить FPL</a>
@@ -201,4 +202,3 @@
 </div>
 </div>
 </body>
-
