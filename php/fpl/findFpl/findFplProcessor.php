@@ -70,8 +70,6 @@ if (isset($authorRequest)) {
 //формируем полный запрос
 $sql .= $complete_sql;
 
-//в цикле формируем массив $params который используется для PDO
-
 
 $stmt = $pdo->prepare($sql);
 $stmt->execute($params);
