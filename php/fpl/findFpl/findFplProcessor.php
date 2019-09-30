@@ -2,6 +2,7 @@
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/requireplugins.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/class/refactorField9.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/class/parceRMK.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/class/generatorSQLrequire.php'; ?>
 
 <?php
 //получаем данные из строк поиска
@@ -20,11 +21,7 @@ $percent = '%';
 //добавляем символ % с двух сторон переменной для того что бы поиск происходил
 // по всем данным имеющий подобный порядок символов
 
-$arrival .= $percent . $arrival . $percent;
-$route = $percent . $route . $percent;
-$comment = $percent . $comment . $percent;
-$fplname = $percent . $comment . $percent;
-$remark = $percent . $remark . $percent;
+
 
 
 $sql = "SELECT * FROM default_fpl ";
@@ -36,34 +33,17 @@ $where = '';
 //финальная строка получится такая
 // SELECT * FROM default_fpl WHERE departure LIKE :departure AND route LIKE :route LIMIT 50
 
-foreach ($_POST as $key => $val) {
-    if (!empty($val)) {
-        if (!empty($where))
-            $where .= ' && ';
-        $column = trim($key, ':');
-        $key = ':' . $key;
-        $where .= "$column LIKE $key";
+$complete_sql = new generatorSQLrequire();
+$complete_sql = $complete_sql->generateSQLRequest();
+//формируем полный запрос
+$sql .= $complete_sql;
+
+//в цикле формируем массив $params который используется для PDO
+$params = new generatorSQLrequire();
+$params = $params->generateParamsFromPDO();
 
 
-    }
-}
-
-if (!empty($where)) {
-    $sql .= ' WHERE ' . $where;
-    $sql .= ' LIMIT 50';
-    $fsql = $sql;
-
-}
-//в цикле формируем массив params который используется для PDO
-
-foreach ($_POST as $key => $val) {
-    if (!empty($val)) {
-        $params[':' . $key] = '%' . $val . '%';
-    }
-}
-
-
-$stmt = $pdo->prepare($fsql);
+$stmt = $pdo->prepare($sql);
 $stmt->execute($params);
 $executeRow = $stmt->rowCount();
 
@@ -78,10 +58,7 @@ if ($executeRow == 0) {
 //  как сделать так что бы можно было использовать IF в данном месте т.е. если база не вернула ответов
 // то выводилось бы сообщение.
 
-while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-
-
-    ?>
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
 
 
     <p><h2>Имя FPL: <? print_r($row['FPL_name']) ?> </h2></p>
@@ -114,9 +91,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             ?></b></p>
 
     <?php
-
-}
-
+endwhile;
 ?>
 
 
