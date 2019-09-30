@@ -1,10 +1,10 @@
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/requireplugins.php'; ?>
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/class/refactorField9.php'; ?>
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/class/parceRMK.php'; ?>
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/class/generatorSQLrequire.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/class/autoloadClass.php'; ?>
+
 
 <?php
+
 //получаем данные из строк поиска
 /* Задача: требуется осуществлять поиск по БД FPL поиск должен осуществляться как по
 отдельным элементам базы, так и по всем введеным параметрам.**/
@@ -22,7 +22,9 @@ $percent = '%';
 // по всем данным имеющий подобный порядок символов
 
 
-
+/** $sql - обязательный параметр
+ * который требуется задавать для запроса - т.е. первая часть запроса.
+ */
 
 $sql = "SELECT * FROM default_fpl ";
 $where = '';
@@ -47,6 +49,7 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute($params);
 $executeRow = $stmt->rowCount();
 
+//если PDO вернул 0 строк - вывести запись о том что строк не найдено
 if ($executeRow == 0) {
     ?>
     <div class="text-center">
@@ -55,8 +58,7 @@ if ($executeRow == 0) {
     <?
 
 }
-//  как сделать так что бы можно было использовать IF в данном месте т.е. если база не вернула ответов
-// то выводилось бы сообщение.
+
 
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
 
@@ -65,23 +67,29 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
     <p></p>
     <p>(FPL-NFTXXXX-VN <br>
 
-        -<? //производим замену значения MI8, AS-50, AS55, MI26 на формализованные
+        -<?//9 поле
+        //производим замену значения MI8, AS-50, AS55, MI26 на формализованные
         $val = new refactorField9();
         echo $val->refactoringField9($row['helicopter_model']); ?> <br>
 
-        -<? print_r($row['departure']);
+
+        -<?//15 поле
+        print_r($row['departure']);
         print_r($row['timetogo']); ?><br>
 
 
-        -<? $str = new parceRMK();
+        -<?//16 поле
+        $str = new parceRMK();
         echo $str->parseRMK($row['route']);
 
         ?> <br>
 
-        -<? print_r($row['arrival']);
+        -<? //17 поле
+        print_r($row['arrival']);
         print_r($row['endtime']); ?> <? print_r($row['alternative1']); ?> <? print_r($row['alternative2']); ?>
         <br>
-        -<? $str1 = $str->deleteDash($row['remark']);
+        -<?//18 поле
+        $str1 = $str->deleteDash($row['remark']);
         echo $str->parseRMK($str1); ?>
 
     </p>
