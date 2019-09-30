@@ -1,48 +1,76 @@
+<?php session_start(); ?>
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/requireplugins.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/class/autoloadClass.php'; ?>
 
 
+
 <?php
-
-//получаем данные из строк поиска
-/* Задача: требуется осуществлять поиск по БД FPL поиск должен осуществляться как по
-отдельным элементам базы, так и по всем введеным параметрам.**/
-
-
-$remark = htmlspecialchars($_POST['remark']);
-$arrival = htmlspecialchars($_POST['arrival']);
-$route = htmlspecialchars($_POST['route']);
-$comment = htmlspecialchars($_POST['comment']);
-$fplname = htmlspecialchars($_POST['name']);
-$percent = '%';
-
-
-//добавляем символ % с двух сторон переменной для того что бы поиск происходил
-// по всем данным имеющий подобный порядок символов
-
 
 /** $sql - обязательный параметр
  * который требуется задавать для запроса - т.е. первая часть запроса.
  */
 
+
 $sql = "SELECT * FROM default_fpl ";
 $where = '';
 
 
-//данный цикл должен производить генерацию запроса как и первый, но с учетом того
-// что запрос будет передаваться в PDO
-//финальная строка получится такая
-// SELECT * FROM default_fpl WHERE departure LIKE :departure AND route LIKE :route LIMIT 50
+/**данный цикл должен производить генерацию запроса как и первый, но с учетом того
+ * что запрос будет передаваться в PDO
+ * финальная строка получится такая
+ * SELECT * FROM default_fpl WHERE departure LIKE :departure AND route LIKE :route LIMIT 50*/
 
-$complete_sql = new generatorSQLrequire();
-$complete_sql = $complete_sql->generateSQLRequest();
+
+//если передаётся значение "только мои" то, удаляем ключь из POST запроса что бы исключить его из цикла foreach
+if ($_POST['author'] == 'on') {
+    unset($_POST['author']);
+    $authorRequest = $_SESSION['user_login'];
+
+}
+//проходимся по массиву, и добавляем ключь-значение в запрос
+foreach ($_POST as $key => $val) {
+    if (!empty($val)) {
+        if (!empty($where))
+            $where .= ' && ';
+        $column = trim($key, ':');
+        $key = ':' . $key;
+        $where .= "$column LIKE $key";
+
+    }
+}
+
+
+if (!empty($where)) {
+    $sqlReq = '';
+    $sqlReq .= ' WHERE ' . $where;
+    //если стоит галочка "только мои" то переменой $_POST['author'] назначается идентификатор логина
+    // и добавляется строка в запрос
+    if (isset($authorRequest)) {
+        $sqlReq .= ' AND author = :author';
+    }
+    $sqlReq .= ' LIMIT 50';
+    $complete_sql = $sqlReq;
+
+}
+
+
+//в цикле формируем массив params который используется для PDO
+foreach ($_POST as $key => $val) {
+    if (!empty($val)) {
+        $params[':' . $key] = '%' . $val . '%';
+    }
+}
+//если был передан параметр "только мои" и была создана переменная $authorRequest - то создаем новый пунк в
+//params для обработки методом execute() PDO
+if (isset($authorRequest)) {
+    $params[':author'] = $authorRequest;
+}
+
 //формируем полный запрос
 $sql .= $complete_sql;
 
 //в цикле формируем массив $params который используется для PDO
-$params = new generatorSQLrequire();
-$params = $params->generateParamsFromPDO();
 
 
 $stmt = $pdo->prepare($sql);
@@ -94,11 +122,11 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
 
     </p>
 
-    <p><b><?
+    <p><b><?//комментарий из базы
             echo $str->parseRMK($row['commentaries']);
             ?></b></p>
 
-    <?php
+<?php
 endwhile;
 ?>
 
