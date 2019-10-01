@@ -68,7 +68,7 @@
             </div>
 
             <div class="modal-body">
-                <form class="col 10 center" id="add_article_form" method="post" action="<?$_SERVER["DOCUMENT_ROOT"];?>/php/addfpl/addfpl.php"> <!-- TODO сделть обработчик-->
+                <form class="col 10 center" id="add_article_form" method="post" action="<?$_SERVER["DOCUMENT_ROOT"];?>/php/fpl/addFpl/addFplProcessor.php">
 
 
                     <div class="form-group">
@@ -76,74 +76,14 @@
                         <textarea class="form-control" id="FPL_name" rows="1" name="FPL_name"required></textarea>
                     </div>
 
-                    <div class="form-group">
-                        <label for="exempleCategory">Тип ВС</label>
-                        <select class="form-control form-control-sm" id="helicopter_model" name="helicopter_model">
-                            <option>MI8</option>
-                            <option>AS-50</option>
-                            <option>AS-55</option>
-                            <option>MI-26</option>
 
-                        </select>
-                    </div>
+                    <!-- departure это "отправление" по английски -->
+
+
 
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-3">
-                                <label for="text__area" id="departure"   required>Пункт Вылета(ИКАО)</label>
-                                <textarea class="form-control" id="departure" name="departure" rows="1" maxlength="4" required></textarea>
-                            </div>
-                            <div class="col-3">
-                                <label for="text__area" id="timetogo"  >Время вылета</label>
-                                <textarea class="form-control" id="timetogo" name="timetogo" rows="1" maxlength="4" ></textarea>
-                            </div>
-                        </div>
-                    </div> <!-- departure это "отправление" по английски -->
-
-                    <div class="form-group">
-                        <label for="text__area" id="speed"   required>Высота и скорость</label>
-                        <textarea class="form-control" id="speed" name="speed" rows="1" placeholder="K0190M0090"></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="text__area" id="route"  required> Маршурт </label>
-                        <textarea class="form-control" id="route" name="route" rows="3" required></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-3">
-                                <label for="text__area" id="arrival"   required>Пункт прибытия</label>
-                                <textarea class="form-control" id="arrival" name="arrival" rows="1" maxlength="4" required></textarea>
-                            </div>
-                            <div class="col-3">
-                                <label for="text__area" id="endtime"  required>Истекшее время</label>
-                                <textarea class="form-control" id="endtime" name="endtime" rows="1" maxlength="4" required></textarea>
-                            </div>
-                            <div class="col-3">
-                                <label for="text__area" id="alternative1"  required>Запасной аэродром1</label>
-                                <textarea class="form-control" id="alternative1" name="alternative1" rows="1" maxlength="4" required></textarea>
-                            </div>
-                            <div class="col-3">
-                                <label for="text__area" id="alternative2"  required>Запасной аэродром2</label>
-                                <textarea class="form-control" id="alternative2" name="alternative2" rows="1" maxlength="4" required></textarea>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6">
-                            <label for="text__area" id="reg"  required>Регистрационный номер</label>
-                            <textarea class="form-control" id="reg" name="reg" rows="1" maxlength="12" required></textarea>
-                        </div>
-                        <div class="col-6">
-                            <label for="text__area" id="dof"  required>Дата</label>
-                            <textarea class="form-control" id="dof" name="dof" rows="1" maxlength="12" required></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="text__area" id="remark"  required> RMK </label>
-                        <textarea class="form-control" id="remark" name="remark" rows="4" required></textarea>
+                        <label for="text__area" id="route"  required> FPL </label>
+                        <textarea class="form-control" id="FPL" name="FPL" rows="15" required></textarea>
                     </div>
 
 
@@ -184,7 +124,7 @@
 
                     </div>
                     <hr>
-                    <div class="row justify-content-between"">
+                    <div class="row justify-content-between">
                     <div class="col-6">
                         <button type="submit" class="btn btn-primary">Отправить</button>
                     </div>
