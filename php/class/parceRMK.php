@@ -28,8 +28,10 @@ class parceRMK
         $replace = ["<br>"];
         $str = str_replace($search, $replace, $str);
 
-
-
+        //добавил проверку, если последний символ был конвертирован в <br>, вернуть запись без данного изменения
+        if (substr($str, -4, 4) == '<br>'){
+            return substr($str, 0, -4);
+        }
         return $str;
     }
 
@@ -48,4 +50,5 @@ class parceRMK
         }
         return $str;
     }
+
 }
