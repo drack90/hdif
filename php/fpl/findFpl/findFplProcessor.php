@@ -114,41 +114,83 @@ if ($executeRow == 0) {
 
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
 
+<div id="<?php print_r($row['id'])?>-FPL"><?php
+    //создаем кнопку редактированя или удаления
+    if($authorRequest == $_SESSION['user_login']){
+        ?>
 
-    <p><h2>Имя FPL: <? print_r($row['FPL_name']) ?> </h2></p>
+        <div class="">
+            <div class="more">
+                <button id="more-btn" class="more-btn">
+                    <span class="more-dot"></span>
+                    <span class="more-dot"></span>
+                    <span class="more-dot"></span>
+                </button>
+                <div class="more-menu">
+                    <div class="more-menu-caret">
+                        <div class="more-menu-caret-outer"></div>
+                        <div class="more-menu-caret-inner"></div>
+                    </div>
+                    <ul class="more-menu-items" tabindex="-1" role="menu" aria-labelledby="more-btn" aria-hidden="true">
+                        <li class="more-menu-item" role="presentation">
+                            <button type="button" class="more-menu-btn" role="menuitem">Share</button>
+                        </li>
+                        <li class="more-menu-item" role="presentation">
+                            <button type="button" class="more-menu-btn" role="menuitem">Copy</button>
+                        </li>
+                        <li class="more-menu-item" role="presentation">
+                            <button type="button" class="more-menu-btn" role="menuitem">Embed</button>
+                        </li>
+                        <li class="more-menu-item" role="presentation">
+                            <button type="button" class="more-menu-btn" role="menuitem">Block</button>
+                        </li>
+                        <li class="more-menu-item" role="presentation">
+                            <button type="button" class="more-menu-btn" role="menuitem">Report</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+       <?php
+        } ?>
+
+<div id="<?php print_r($row['id']); ?>" name="<?php print_r($row['id']); ?>">
+    <p><h2>Имя FPL: <? print_r($row['fplName']) ?> </h2></p>
     <p></p>
-    <p>(FPL-NFTXXXX-VN <br>
+    <p><?php print_r($row['field1']); ?> <br>
 
-        -<?//9 поле
-        //производим замену значения MI8, AS-50, AS55, MI26 на формализованные
-        $val = new refactorField9();
-        echo $val->refactoringField9($row['helicopter_model']); ?> <br>
+        -<?//7 поле
+
+        print_r($row['field7']); ?> <br>
 
 
-        -<?//15 поле
-        print_r($row['departure']);
-        print_r($row['timetogo']); ?><br>
+        -<?//13 поле
+        print_r($row['field13']);
+        print_r($row['timeDeparture']); ?><br>
 
 
         -<?//16 поле
-        $str = new parceRMK();
-        echo $str->parseRMK($row['route']);
+        print_r($row['field15']);
 
         ?> <br>
 
         -<? //17 поле
-        print_r($row['arrival']);
-        print_r($row['endtime']); ?> <? print_r($row['alternative1']); ?> <? print_r($row['alternative2']); ?>
+        print_r($row['field16']);
+        print_r($row['timeArrival']); ?> <? print_r($row['alternative1']); ?> <? print_r($row['alternative2']); ?>
         <br>
         -<?//18 поле
-        $str1 = $str->deleteDash($row['remark']);
-        echo $str->parseRMK($str1); ?>
+        print_r($row['field18']); ?>
 
     </p>
 
     <p><b><?//комментарий из базы
-            echo $str->parseRMK($row['commentaries']);
+            print_r($row['commentaries']);
             ?></b></p>
+</div>
+
+
+
 
 <?php
 endwhile;
