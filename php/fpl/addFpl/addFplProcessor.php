@@ -33,14 +33,17 @@ $direction = $_POST['direction']; // Дирекция
     $field15 = new parceRMK();
     $field15 = parceRMK::ParseRMK($fplArray[6]);
 
+
 //формирование поля 16
 
     //разбиваем на составные части по пробелу
     $str16 = preg_split('/ /', $fplArray[7], 0, PREG_SPLIT_NO_EMPTY);
     //фильтруем массив с 4 буквы и 4 цифры и назначаем цифры переменной "timeArrival" получаем время взлёта
-    $timeArrival = preg_split('/[^0-9\-\/]/', $str16[0], 0, PREG_SPLIT_NO_EMPTY);
+    $timeArrival1 = preg_split('/[^0-9\-\/]/', $str16[0], 0, PREG_SPLIT_NO_EMPTY);
+    $timeArrival = $timeArrival1[0];
     //фильтруем массив и назначаем 4 буквы переменной "field16" - получаем Пункт вылета
     $field16 = preg_split('/[^A-Z\-\/]/', $str16[0], 4, PREG_SPLIT_NO_EMPTY);
+    $field16 = $field16[0];
     //назначаем альтернативные аэропорты
     $alternative1 = $str16[1];
     $alternative2 = $str16[2];
@@ -64,9 +67,9 @@ echo '<br>';
 echo '-'.$field18;
 */
     $sqlAddFPL = 'INSERT INTO default_fpl(fplName,field1,field7,field13,timeDeparture,field15,field16,
-                                            timeArrival,alternative1,alternative2,author,direction,commentaries) 
+                                            timeArrival,alternative1,alternative2,author,direction,commentaries,field18) 
                                     VALUES (:fplName,:field1,:field7,:field13,:timeDeparture,:field15,:field16,
-                                    :timeArrival,:alternative1,:alternative2,:author,:direction,:commentaries)';
+                                    :timeArrival,:alternative1,:alternative2,:author,:direction,:commentaries,:field18)';
 
     $params = [ ':fplName' => $fplName,
                 ':field1' => $field1,
@@ -80,7 +83,8 @@ echo '-'.$field18;
                 ':alternative2' => $alternative2,
                 ':author' => $author,
                 ':direction' => $direction,
-                ':commentaries' => $commentaries];
+                ':commentaries' => $commentaries,
+                ':field18' => $field18];
     
     
     $stmt = $pdo->prepare($sqlAddFPL);
