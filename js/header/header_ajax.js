@@ -1,3 +1,5 @@
+//отрисовывает страницу поиска в DOM 'content_block' файла index.php
+
 $('#findFplPage').on('click', function () {
 
     $.ajax({
@@ -9,3 +11,4 @@ $('#findFplPage').on('click', function () {
         }
     });
 });
+
