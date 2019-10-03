@@ -117,6 +117,7 @@ if ($executeRow == 0) {
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
 
     //если параметр "notFPL" = true то формируем данные по другому:
+
         if ($row['notFPL']== 1 ){
     ?>
             <div id="<?php print_r($row['id']); ?>" name="<?php print_r($row['id']); ?>">
