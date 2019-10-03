@@ -102,6 +102,7 @@ $stmt->execute($params);
 $executeRow = $stmt->rowCount();
 
 //если PDO вернул 0 строк - вывести запись о том что строк не найдено
+
 if ($executeRow == 0) {
     ?>
     <div class="text-center">
@@ -112,7 +113,29 @@ if ($executeRow == 0) {
 }
 
 
-while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
+
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
+
+    //если параметр "notFPL" = true то формируем данные по другому:
+        if ($row['notFPL']== 1 ){
+    ?>
+            <div id="<?php print_r($row['id']); ?>" name="<?php print_r($row['id']); ?>">
+                <p><h2>Имя FPL: <? print_r($row['fplName']) ?> </h2></p>
+                <p></p>
+                <p>
+                    <?//15 поле
+                    print_r($row['field15']);
+
+                    ?> <br>
+
+                                <p><b><?//комментарий из базы
+                        print_r($row['commentaries']);
+                        ?></b></p>
+            </div>
+
+
+        <?php }
+            ?>
 
 <div id="<?php print_r($row['id'])?>-FPL"><?php
     //создаем кнопку редактированя или удаления
