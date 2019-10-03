@@ -38,25 +38,8 @@
             });
         });
 
-        $('a').on('click', function () {
+  //не понятно что делает этот скрипт
 
-
-
-                   var li_id = this.id;
-
-
-            console.log(li_id);
-
-            $.ajax({
-                   url: li_id,
-                   cache: false,
-                   success: function (html) {
-                       $('#content_block').html(html);
-                   }
-               });
-        });
-
-            event.preventDefault();
 
 
 
