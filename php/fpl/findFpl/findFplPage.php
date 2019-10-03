@@ -64,22 +64,5 @@
 </div>
 </div>
 
-<script type="text/javascript">
+<script src="<?$_SERVER['DOCUMENT_ROOT'];?>/js/findFpl/findFplAJAX.js"></script>
 
-
-    $('#searchFpl').on('click', function () {
-        $.ajax({
-            url: "/php/fpl/findFpl/findFplProcessor.php",
-            type: "POST",
-            data: $('#findFpl').serialize(),
-            //({direction: $('#send_generator_fpl').val(),
-            // data: $('#transferData').val()}),
-            dataType: "html",
-            success: function (data) {
-                $('#results').html(data);
-            }
-        });
-        event.preventDefault();
-
-    });
-    </script>
