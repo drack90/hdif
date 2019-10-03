@@ -1,7 +1,6 @@
 <?php session_start(); ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/class/autoloadClass.php';?>
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/requireplugins.php'; ?>
 
 <?php
 //Формируем Имя плана
@@ -11,10 +10,47 @@ $commentaries = $_POST['commentaries']; //комментарий к ФПЛ
 $direction = $_POST['direction']; // Дирекция
 
 
+    //если переключатель не стандартных FPL включен, то выполняется скрипт:
+    if (isset($_POST['notStandartFPL'])){
+        //все поля ввода назначаем переменной $fullFPL
+        $fullFPL = new parceRMK();
+        $fullFPL = parceRMK::ParseRMK($_POST['FPL']);
+        $notFPL = 1;
+
+        //формируем запрос в базу. 15 поле - используем как хранилище информации добавленной пользователем
+        $sqlAddFPL = 'INSERT INTO default_fpl(fplName,field15,author,direction,commentaries,notFPL) 
+                                    VALUES (:fplName,:field15,:author,:direction,:commentaries,:notFPL)';
+
+        $params = [':fplName' => $fplName,
+            ':field15' => $fullFPL,
+            ':author' => $author,
+            ':direction' => $direction,
+            ':commentaries' => $commentaries,
+            ':notFPL' => $notFPL,
+            ];
+
+
+        $stmt = $pdo->prepare($sqlAddFPL);
+        $stmt->execute($params);
+
+        echo 'Данные добавлены в БД.';
+        exit;
+
+    }
 
 //раскладываем FPL на составные - разделителем является "-"
     $fplArray = explode('-',$_POST['FPL']);
+//проверяем количество эллементов массива - если массив, сформировался с меньшим количеством элементов
+//скоре всего это либо неформализованный FPL либо - в FPL изначально допущена ошибка.
 
+        if (count($fplArray) < 7 ){
+            echo 'Требуется отметить параметр "не стандартный ФПЛ", для корректного добавления информации в базу.';
+            exit;
+        }
+        if (count($fplArray) > 9 ){
+            echo 'Требуется отметить параметр "не стандартный ФПЛ", для корректного добавления информации в базу.';
+            exit;
+        }
 //формируем первую строку FPL в БД
     $field1 = $fplArray[0].'-'.$fplArray[1].'-'.$fplArray[2];
 
@@ -90,7 +126,6 @@ echo '-'.$field18;
     $stmt = $pdo->prepare($sqlAddFPL);
     $stmt->execute($params);
 
-    echo 'Fly plan добавлен в базу';
-    
+    echo 'Данные добавлены в Базу.';
 
 
