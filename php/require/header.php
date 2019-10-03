@@ -1,5 +1,6 @@
 <? session_start(); ?>
 
+
 <body id="page-top">
 <!-- Navigation -->
 
@@ -18,7 +19,7 @@
                     <a class="nav-link" id="findFplPage" href="#"> FPL </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target=".bd-example-modal-lg">Добавить FPL</a>
+                    <a class="nav-link" data-toggle="modal" href="#addFPLModal">Добавить FPL</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Геоточки</a>
@@ -54,9 +55,8 @@
 <br><br><br>
 
 <!-- Модальное окно добавления FPL-а в БД -->
-
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="addArticleModal" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+<div class="modal fade bd-example-modal-lg" id="addFPLModal" tabindex="-1" role="dialog" aria-labelledby="addFPLModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
 
             <div class="modal-header">
@@ -68,7 +68,8 @@
             </div>
 
             <div class="modal-body">
-                <form class="col 10 center" id="add_article_form" method="post" action="<?$_SERVER["DOCUMENT_ROOT"];?>/php/fpl/addFpl/addFplProcessor.php">
+
+                <form class="col 10 center" id="addFplForm">
 
 
                     <div class="form-group">
@@ -82,7 +83,7 @@
 
 
                     <div class="form-group">
-                        <label for="text__area" id="route"  required> FPL </label>
+                        <label for="text__area" id="FPL"  required> FPL </label>
                         <textarea class="form-control" id="FPL" name="FPL" rows="15" required></textarea>
                     </div>
 
@@ -121,24 +122,28 @@
                                 <button class="btn btn-primary" >загрузить</button>
                             </div>
                         </div>
-
                     </div>
+
                     <hr>
-                    <div class="row justify-content-between">
+
+
+
+            </form>
+                <div class="row justify-content-between">
                     <div class="col-6">
-                        <button type="submit" class="btn btn-primary">Отправить</button>
+                        <button type="button" id="addFplInBD" class="btn btn-primary">Отправить</button>
                     </div>
                     <div class="col-6-right">
                         <button type="button" class="btn btn-secondary center" data-dismiss="modal">Закрыть</button>
                     </div>
-
+                </div>
             </div>
-
-            </form>
         </div>
-    </div>
 </div>
 </div>
-</div>
-</div>
+<script src="<?$_SERVER['DOCUMENT_ROOT'];?>/js/findFpl/findFplAJAX.js"></script>
+<script src="<?$_SERVER['DOCUMENT_ROOT'];?>/js/addFPL/addFplAJAX.js"></script>
+
+
 </body>
+
