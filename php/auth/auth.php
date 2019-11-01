@@ -7,7 +7,7 @@ $password = trim($_POST['password']);
 //проверяем не пустые ли значения нам пере
 if(!empty($login) && !empty($password) ) {
 
-    $sql = 'SELECT login, password, telephone FROM  users  WHERE login = :login';
+    $sql = 'SELECT login, password, telephone, admin FROM  users  WHERE login = :login';
     $params = [':login' =>$login,];
 
     $stmt = $pdo->prepare($sql);
@@ -19,6 +19,8 @@ if(!empty($login) && !empty($password) ) {
         if(password_verify($password, $user->password)){
             $_SESSION['user_login'] = $user->login;
             $_SESSION['tel'] = $user->telephone;
+            $_SESSION['admin'] = $user->admin;
+
            //Назначаем суперглобавльному массиву значение login.
                 header('location: http://hdif/index.php');
         }else  {
