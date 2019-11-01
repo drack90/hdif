@@ -38,7 +38,31 @@
             });
         });
 
-  //не понятно что делает этот скрипт
+    //скрипт который производит отправку ID строки котрую пользователь решил удалить
+       $('button.close').on('click', function () { //при нажатии на кнопку с классом close
+           var buttonValue = { //создается переменная которая хранит значение value кнопки
+               'buttonValue': this.value
+           };
+           var r = confirm('точно удалить?'); //функция confirm производит запрос у порльзователя о удалении данных
+
+               if(r == true) {
+
+                   $.ajax({
+                       data: buttonValue,
+                       url: "/php/journal/deletePostInJournal.php",
+                       type: "POST",
+                       dataType: "html",
+                       success: function (html) {
+                           location.reload(); //производит перезагрузку страници.
+                           //$("#journal_content").load("/php/journal/view_journal.php");
+                           alert(html);
+                       }
+                   });
+               } else{
+                   console.log('отмена удаления');
+               }
+
+       });
 
 
 
