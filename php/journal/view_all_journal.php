@@ -62,10 +62,15 @@
                             <div class="media">
                                 <div class="media-body">
                                     <a class="text-black-50"><?php print_r($row['date']);?></a>
-                                    <span><? print_r($row["text"]);?></span>
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"  data-toggle="Close" data-placement="top" title="закрыть">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                                    <span><? print_r($row["text"]);?></span> <!-- Если параметр 'admin' в сессии прописан - то показывать кнопку удаления текста-->
+                                    <?php
+                                    if($_SESSION['admin'] == true){
+                                        ?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"  data-toggle="Close" data-placement="top" title="закрыть">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    <?php }
+                                    ?>
 
                                 </div>
                             </div>
