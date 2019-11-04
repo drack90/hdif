@@ -32,12 +32,22 @@
 
             ?> " id="lending"> <!-- анимация появления -->
                 <div class="media">
-                    <div class="media-body">
+                    <div class="media-body" id="post_<?php print_r($row['id']);?>">
                         <a class="text-black-50"><?php print_r($row['date']);?></a>
                         <span><? print_r($row["text"]);?></span>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"  data-toggle="Close" data-placement="top" title="закрыть">
+                        <!-- Если параметр 'admin' в сессии прописан - то показывать кнопку удаления текста-->
+                        <?php
+                        if(isset($_SESSION['user_login'])){
+                        if($_SESSION['admin'] == true){
+                            ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"
+                                data-toggle="Close" data-placement="top" title="закрыть"
+                                name="deleteButton" id="deleteButton" value="<?php print_r($row['id']); ?>">
                             <span aria-hidden="true">&times;</span>
                         </button>
+                       <?php }
+                       }
+                        ?>
 
                     </div>
                 </div>
