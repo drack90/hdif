@@ -1,4 +1,4 @@
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/auth/check_auth.php';?>
+<?php require $_SERVER["DOCUMENT_ROOT"] . "/php/auth/check_auth.php"; ?>
 
 <!doctype html>
 <html lang="ru">
@@ -33,4 +33,21 @@
 </div>
     </main>
 </html>
+
+<script type="text/javascript">
+    $('#findFplPage').on('click', function () {
+
+        $.ajax({
+            url: "php/fpl/findFpl/findFplPage.php",
+            cache: false,
+            success: function (html) {
+                $('#content_block').html(html);
+
+            }
+        });
+    });
+
+</script>
+
+
 
