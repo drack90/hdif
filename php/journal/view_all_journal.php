@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!-- Данный блок должен отображаться посредством php с пометкой о новом сообщении и новой новости. -->
 <!--<div id="journal_content">-->
     <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
@@ -60,16 +61,21 @@
 
                         ?> " id="lending"> <!-- анимация появления -->
                             <div class="media">
-                                <div class="media-body">
+                                <div class="media-body" id="post_<?php print_r($row['id']);?>">
                                     <a class="text-black-50"><?php print_r($row['date']);?></a>
-                                    <span><? print_r($row["text"]);?></span> <!-- Если параметр 'admin' в сессии прописан - то показывать кнопку удаления текста-->
+                                    <span><? print_r($row["text"]);?></span>
+                                    <!-- Если параметр 'admin' в сессии прописан - то показывать кнопку удаления текста-->
                                     <?php
-                                    if($_SESSION['admin'] == true){
-                                        ?>
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"  data-toggle="Close" data-placement="top" title="закрыть">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    <?php }
+                                    if(isset($_SESSION['user_login'])){
+                                        if($_SESSION['admin'] == true){
+                                            ?>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"
+                                                    data-toggle="Close" data-placement="top" title="закрыть"
+                                                    name="deleteButton" id="deleteButton" value="<?php print_r($row['id']); ?>">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        <?php }
+                                    }
                                     ?>
 
                                 </div>
@@ -120,14 +126,8 @@
     </div>
     <div class="col-3"></div>
 </div>
-<script src="/js/joгurnal_js/journal_ajax.js"></script>
+<script src="/js/joгurnal_js/journal_all_ajax.js"></script>
 
-
-
-
-
-
-<script src="/js/joгurnal_js/journal_ajax.js"></script>
 
 
 
