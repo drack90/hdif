@@ -38,10 +38,10 @@
                 </li>
             </ul>
         </div>
-
-            <a class="text-left" href="<?$_SERVER["DOCUMENT_ROOT"];?>/index.php">
-                <img src="<?$_SERVER['DOCUMENT_ROOT'];?>/img/icon/notice_blue.svg" width="30" height="30" class="" alt="" >
-            </a>
+            <div class="text-left" style="margin-right: 2rem">
+                <div class="text-left h6 text-primary"><? print_r($_SESSION['user_login']); ?></div>
+            </div>
+            
 
         <form class="form-inline my-2 my-md-0" >
             <a role="button" href="<?$_SERVER["DOCUMENT_ROOT"];?>/php/require/logout.php" class="btn btn-primary">Выход</a>
@@ -69,7 +69,7 @@
 
             <div class="modal-body">
 
-                <form class="col 10 center" id="addFplForm">
+                <form class="col 10 center" id="addFplForm" >
 
 
                     <div class="form-group">
@@ -80,7 +80,10 @@
 
                     <!-- departure это "отправление" по английски -->
 
-
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="notStsndartFPL" name="notStandartFPL">
+                        <label class="custom-control-label" for="notStsndartFPL">Не стандартный FPL</label>
+                    </div>
 
                     <div class="form-group">
                         <label for="text__area" id="FPL"  required> FPL </label>
@@ -105,10 +108,16 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <label for="text__area" id="commentaries"  required> комментарий </label>
-                        <textarea class="form-control" id="commentaries" name="commentaries" rows="1" required></textarea>
-                    </div>
+                            <div class="form-group">
+                                <label for="text__area" id="commentaries"  required> комментарий </label>
+                                <textarea class="form-control" id="commentaries" name="commentaries" rows="1" required></textarea>
+                            </div>
+
+
+
+
+
+
 
                     <div class="form-group">
                         <div class="row justify-content-between">
@@ -125,13 +134,11 @@
                     </div>
 
                     <hr>
-
-
-
             </form>
+
                 <div class="row justify-content-between">
                     <div class="col-6">
-                        <button type="button" id="addFplInBD" class="btn btn-primary">Отправить</button>
+                        <button type="submit" id="addFplInBD" class="btn btn-primary">Отправить</button>
                     </div>
                     <div class="col-6-right">
                         <button type="button" class="btn btn-secondary center" data-dismiss="modal">Закрыть</button>
