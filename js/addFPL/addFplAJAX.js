@@ -4,9 +4,9 @@
          url: "/php/fpl/addFpl/addFplProcessor.php",
          type: "POST",
          data: $('#addFplForm').serialize(),
-         dataType:"html",
-         success: function () {
-             alert('запись добавлена');
+         success: function (data) {
+             alert(data);
+             console.log('kokoko');
              $('#addFPLModal').modal('hide'); //закрывает модальное окно
          }
      });
