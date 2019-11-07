@@ -1,14 +1,15 @@
 <?php session_start(); ?>
 <html lang="ru">
 <head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    <link href=<?$_SERVER['DOCUMENT_ROOT'];?>"/css/signin.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link href=<?$_SERVER['DOCUMENT_ROOT'];?>"css/bootstrap.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link href=<?$_SERVER['DOCUMENT_ROOT'];?>"css/signin.css" rel="stylesheet">
 
 <style>
     .img{
-        background: no-repeat center/100% url("../../../howifly/img/mi8.png");
+        background: no-repeat center/100% url("../../img/mi8.png");
     }
 
     .bd-placeholder-img {
