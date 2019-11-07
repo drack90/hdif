@@ -3,8 +3,10 @@
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
 
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/class/priorityColor.php"; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/class/autoloadClass.php'; ?>
 
-<?php
+
+    <?php
 
     $sqljournal = "SELECT * FROM journal ORDER BY id DESC LIMIT 5";
 
@@ -34,7 +36,9 @@
                 <div class="media">
                     <div class="media-body" id="post_<?php print_r($row['id']);?>">
                         <a class="text-black-50"><?php print_r($row['date']);?></a>
-                        <span><? print_r($row["text"]);?></span>
+                    <?php new parceRMK(); //используем класс parceRMK для того что бы исправить возврат коретки текста, возвращаемого из MySQL
+                   $text = parceRMK::ParseRMK($row['text']); ?>
+                        <span><? print_r($text);?></span>
                         <!-- Если параметр 'admin' в сессии прописан - то показывать кнопку удаления текста-->
                         <?php
                         if(isset($_SESSION['user_login'])){
