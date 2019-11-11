@@ -135,8 +135,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
             </div>
 
 
-        <?php }
-            ?>
+
 
 <div id="<?php print_r($row['id'])?>-FPL"><?php
     //создаем кнопку редактированя или удаления
@@ -178,6 +177,9 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
 
        <?php
         } ?>
+    <?php }
+        break;
+    ?>
 
 <div id="<?php print_r($row['id']); ?>" name="<?php print_r($row['id']); ?>">
     <p><h2>Имя FPL: <? print_r($row['fplName']) ?> </h2></p>
