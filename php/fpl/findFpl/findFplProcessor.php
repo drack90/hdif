@@ -1,4 +1,6 @@
 <?php session_start(); ?>
+<!--Пришлось дополнительно добавить, т.к. не подхватывал уже загруженные плагины -->
+<script src="<?$_SERVER['DOCUMENT_ROOT'];?>/js/bootstrap.bundle.js"></script>
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/requireplugins.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/class/autoloadClass.php'; ?>
@@ -120,8 +122,36 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
 
         if ($row['notFPL']== 1 ){
     ?>
-            <div id="<?php print_r($row['id']); ?>" name="<?php print_r($row['id']); ?>">
-                <p><h2>Имя FPL: <? print_r($row['fplName']) ?> </h2></p>
+
+
+<div id="<?php print_r($row['id']); ?>" name="<?php print_r($row['id']); ?>">
+               <div class="row">
+
+                   <div class="col-9"><h2>Имя FPL: <? print_r($row['fplName']) ?> </h2><div id="<?php print_r($row['id'])?>-FPL"></div></div>
+                       <div class="col-3 text-right"><?php
+                           //создаем кнопку редактированя или удаления
+                           if($authorRequest == $_SESSION['user_login']){
+                               ?>
+
+
+                               <div class="dropdown show">
+                                   <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       Меню
+                                   </a>
+
+                                   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                       <a class="dropdown-item" id="editFpl" href="#">Редактировать</a>
+                                       <a class="dropdown-item" id="deleteFpl" href="#">Удалить</a>
+
+                                   </div>
+                               </div>
+
+
+                               <?php
+                           } ?>
+                       </div>
+               </div>
+
                 <p></p>
                 <p>
                     <?//15 поле
@@ -137,46 +167,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
 
 
 
-<div id="<?php print_r($row['id'])?>-FPL"><?php
-    //создаем кнопку редактированя или удаления
-    if($authorRequest == $_SESSION['user_login']){
-        ?>
 
-        <div class="">
-            <div class="more">
-                <button id="more-btn" class="more-btn">
-                    <span class="more-dot"></span>
-                    <span class="more-dot"></span>
-                    <span class="more-dot"></span>
-                </button>
-                <div class="more-menu">
-                    <div class="more-menu-caret">
-                        <div class="more-menu-caret-outer"></div>
-                        <div class="more-menu-caret-inner"></div>
-                    </div>
-                    <ul class="more-menu-items" tabindex="-1" role="menu" aria-labelledby="more-btn" aria-hidden="true">
-                        <li class="more-menu-item" role="presentation">
-                            <button type="button" class="more-menu-btn" role="menuitem">Share</button>
-                        </li>
-                        <li class="more-menu-item" role="presentation">
-                            <button type="button" class="more-menu-btn" role="menuitem">Copy</button>
-                        </li>
-                        <li class="more-menu-item" role="presentation">
-                            <button type="button" class="more-menu-btn" role="menuitem">Embed</button>
-                        </li>
-                        <li class="more-menu-item" role="presentation">
-                            <button type="button" class="more-menu-btn" role="menuitem">Block</button>
-                        </li>
-                        <li class="more-menu-item" role="presentation">
-                            <button type="button" class="more-menu-btn" role="menuitem">Report</button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-       <?php
-        } ?>
     <?php }
         break;
     ?>
