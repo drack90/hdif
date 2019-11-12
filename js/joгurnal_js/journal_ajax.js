@@ -39,7 +39,7 @@
         });
 
     //скрипт который производит отправку ID строки котрую пользователь решил удалить
-       $('button.close').on('click', function () { //при нажатии на кнопку с классом close
+       $('button.deletePost').on('click', function () { //при нажатии на кнопку с классом close
            var buttonValue = { //создается переменная которая хранит значение value кнопки
                'buttonValue': this.value
            };
