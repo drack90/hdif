@@ -1,7 +1,6 @@
-<?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/requireplugins.php';?>
 
-<div id="findFplPages">
+<?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
+
 <div class="row">
     <div class="col-1"></div>
     <div class="col-3">

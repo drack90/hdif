@@ -1,8 +1,6 @@
 <?php session_start(); ?>
 <!--Пришлось дополнительно добавить, т.к. не подхватывал уже загруженные плагины -->
-<script src="<?$_SERVER['DOCUMENT_ROOT'];?>/js/bootstrap.bundle.js"></script>
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/requireplugins.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/class/autoloadClass.php'; ?>
 
 
