@@ -73,7 +73,7 @@
                                     if(isset($_SESSION['user_login'])){
                                         if($_SESSION['admin'] == true){
                                             ?>
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"
+                                            <button type="button" class="deletePost close" data-dismiss="alert" aria-label="Close"
                                                     data-toggle="Close" data-placement="top" title="закрыть"
                                                     name="deleteButton" id="deleteButton" value="<?php print_r($row['id']); ?>">
                                                 <span aria-hidden="true">&times;</span>
