@@ -55,3 +55,23 @@ $('button.deleteFpl').on('click', function () { //при нажатии на к�
 
 
 //сделать AJAX обработчик для редактирования FPL
+$('#editFpl').on('click', function () { //при нажатии на кнопку с классом close
+    var buttonValue = { //создается переменная которая хранит значение value кнопки
+        'buttonValue': this.value
+    };
+    $.ajax({
+        url: "/php/fpl/editFpl/editFpl.php",
+        type: "POST",
+        data: buttonValue,
+        dataType: "html",
+        success: function (data) {
+            $('#fplmodaledit').html(data);
+            console.log(data);
+            $('#editFPLModal').modal('show');
+        }
+    });
+
+    console.log(buttonValue);
+
+
+});
