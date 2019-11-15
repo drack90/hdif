@@ -148,6 +148,12 @@
         </div>
 </div>
 </div>
+
+
+<!--модальное окно редактирования FPL-->
+
+
+
 <script src="<?$_SERVER['DOCUMENT_ROOT'];?>/js/findFpl/findFplAJAX.js"></script>
 <script src="<?$_SERVER['DOCUMENT_ROOT'];?>/js/addFPL/addFplAJAX.js"></script>
 
