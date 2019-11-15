@@ -1,7 +1,7 @@
 <?php session_start(); ?>
-<!--Пришлось дополнительно добавить, т.к. не подхватывал уже загруженные плагины -->
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/class/autoloadClass.php'; ?>
+
 
 
 
@@ -96,7 +96,6 @@ if (isset($authorRequest)) {
 //формируем полный запрос
 $sql .= $complete_sql;
 
-
 $stmt = $pdo->prepare($sql);
 $stmt->execute($params);
 $executeRow = $stmt->rowCount();
@@ -125,7 +124,8 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
 <div id="<?php print_r($row['id']); ?>" name="<?php print_r($row['id']); ?>">
                <div class="row">
 
-                   <div class="col-9"><h2>Имя FPL: <? print_r($row['fplName']) ?> </h2><div id="<?php print_r($row['id'])?>-FPL"></div></div>
+                   <div class="col-9"><h2>Имя FPL: <span id="fplName"><? print_r($row['fplName']) ?></span> </h2>
+                       <div id="<?php print_r($row['id'])?>-FPL"></div></div>
                        <div class="col-3 text-right"><?php
                            //создаем кнопку редактированя или удаления
                            if($authorRequest == $_SESSION['user_login']){
@@ -138,8 +138,8 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
                                    </a>
 
                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                       <a class="dropdown-item" id="editFpl" href="#">Редактировать</a>
-                                       <a class="dropdown-item" id="deleteFpl" href="#">Удалить</a>
+                                       <button class="dropdown-item editFpl" id="editFpl" value="<?php print_r($row['id'])?>" href="#">Редактировать</button>
+                                       <button class="dropdown-item deleteFpl" id="deleteFpl" value="<?php print_r($row['id'])?>" href="#">Удалить</>
 
                                    </div>
                                </div>
@@ -151,46 +151,62 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
                </div>
 
                 <p></p>
-                <p>
+                <p id="fplBody">
                     <?//15 поле
                     print_r($row['field15']);
 
                     ?> <br>
 
-                                <p><b><?//комментарий из базы
+                                <p id="commentaries"><b><?//комментарий из базы
                         print_r($row['commentaries']);
                         ?></b></p>
             </div>
 
 
 
+    <?php }else{
 
-
-    <?php }
-        break;
     ?>
 
 <div id="<?php print_r($row['id']); ?>" name="<?php print_r($row['id']); ?>">
-    <p><h2>Имя FPL: <? print_r($row['fplName']) ?> </h2></p>
-    <p></p>
-    <p><?php print_r($row['field1']); ?> <br>
+    <div class="row">
 
+        <div class="col-9"><h2>Имя FPL: <span id="fplName"><? print_r($row['fplName']) ?></span> </h2>
+            <div id="<?php print_r($row['id'])?>-FPL"></div></div>
+        <div class="col-3 text-right"><?php
+            //создаем кнопку редактированя или удаления
+            if($authorRequest == $_SESSION['user_login']){
+                ?>
+
+
+                <div class="dropdown show">
+                    <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Меню
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <button class="dropdown-item editFpl" id="editFpl" value="<?php print_r($row['id'])?>" href="#">Редактировать</button>
+                        <button class="dropdown-item deleteFpl" id="deleteFpl" value="<?php print_r($row['id'])?>" href="#">Удалить</>
+
+                    </div>
+                </div>
+
+
+                <?php
+            } ?>
+        </div>
+    </div>
+
+    <p id="fplBody"><?php print_r($row['field1']); ?> <br>
         -<?//7 поле
-
         print_r($row['field7']); ?> <br>
-
-
         -<?//13 поле
         print_r($row['field13']);
         print_r($row['timeDeparture']); ?><br>
-
-
         -<?//16 поле
         print_r($row['field15']);
-
         ?> <br>
-
-        -<? //17 поле
+       -<? //17 поле
         print_r($row['field16']);
         print_r($row['timeArrival']); ?> <? print_r($row['alternative1']); ?> <? print_r($row['alternative2']); ?>
         <br>
@@ -199,7 +215,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
 
     </p>
 
-    <p><b><?//комментарий из базы
+    <p id="commentaries"><b><?//комментарий из базы
             print_r($row['commentaries']);
             ?></b></p>
 </div>
@@ -207,8 +223,11 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
 
 
 
-<?php
+<?php }
 endwhile;
 ?>
+<div id="fplmodaledit"></div>
+<script src="<?$_SERVER['DOCUMENT_ROOT'];?>/js/findFpl/findFplAJAX.js"></script>
+
 
 
