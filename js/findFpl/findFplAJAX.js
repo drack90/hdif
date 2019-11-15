@@ -60,13 +60,13 @@ $('#editFpl').on('click', function () { //при нажатии на кнопк�
         'buttonValue': this.value
     };
     $.ajax({
-        url: "/php/fpl/editFpl/editFpl.php",
+        url: "/php/fpl/editFpl/editFplForm.php",
         type: "POST",
         data: buttonValue,
         dataType: "html",
         success: function (data) {
             $('#fplmodaledit').html(data);
-            console.log(data);
+            // console.log(data);
             $('#editFPLModal').modal('show');
         }
     });
