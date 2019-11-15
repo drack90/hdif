@@ -1,0 +1,66 @@
+
+.dot-menu {
+    position: relative;
+}
+.dot-menu:hover .dot-menu__label {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dot-menu__checkbox {
+    display: none;
+}
+
+.dot-menu__label:before,
+.dot-menu__label:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #3d3d23;
+    transition: .8s;
+    left: 25px;
+    transition: .2s;
+}
+
+.dot-menu__label:after {
+    top: 40px;
+}
+
+.dot-menu__label:before {
+    top: 10px;
+}
+
+.dot-menu__checkbox:checked ~ .dot-menu__label {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.dot-menu__checkbox:checked ~ .dot-menu__label:before,
+.dot-menu__checkbox:checked ~ .dot-menu__label span:before,
+.dot-menu__checkbox:checked ~ .dot-menu__label:after {
+    background-color: #000000;
+    top: 25px;
+}
+.dot-menu__checkbox:checked ~ .dot-menu__label span:before {
+    width: 30px;
+    left: 15px;
+}
+
+.dot-menu__label {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.03);
+    display: block;
+    text-indent: -9999em;
+}
+.dot-menu__label span:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #3d3d23;
+    transition: .8s;
+    left: 25px;
+    top: 25px;
+}
