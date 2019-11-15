@@ -1,4 +1,3 @@
-<!-- Данный блок должен отображаться посредством php с пометкой о новом сообщении и новой новости. -->
 <div id="journal_content">
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
 
