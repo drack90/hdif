@@ -16,7 +16,7 @@
                     <a class="nav-link" href="<?$_SERVER["DOCUMENT_ROOT"];?>/index.php">Главная <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="findFplPage" href="#"> FPL </a>
+                    <a class="nav-link" id="findFplPage" href="<?php $_SERVER['DOCUMENT_ROOT'];?>/php/fpl/findFpl/findFplPage.php"> FPL </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="modal" href="#addFPLModal">Добавить FPL</a>
