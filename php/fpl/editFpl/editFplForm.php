@@ -77,15 +77,10 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
                         <div class="col-auto">
                             <div class="form-group">
                                 <label for="alternative1" id="alternative1__label" class="h6" >Запасной 1 </label>
-                                <textarea class="form-control" id="alternative1" name="alternative1" rows="1" ><?php print_r(strip_tags($row['alternative1'])); ?></textarea>
+                                <textarea class="form-control" id="alternative" name="alternative" rows="1" ><?php print_r(strip_tags($row['alternative'])); ?></textarea>
                             </div>
                         </div>
-                        <div class="col-auto">
-                            <div class="form-group">
-                                <label for="alternative2" id="alternative2__label" class="h6" >Запасной 2 </label>
-                                <textarea class="form-control" id="alternative2" name="alternative2" rows="1"><?php print_r(strip_tags($row['alternative2'])); ?></textarea>
-                            </div>
-                        </div>
+
 
                     </div>
 
