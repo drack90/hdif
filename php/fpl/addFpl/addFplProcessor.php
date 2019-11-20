@@ -9,7 +9,6 @@ $author = $_SESSION['user_login']; //Имя автора
 $commentaries = $_POST['commentaries']; //комментарий к ФПЛ
 $direction = $_POST['direction']; // Дирекция
 
-
     //если переключатель не стандартных FPL включен, то выполняется скрипт:
     if (isset($_POST['notStandartFPL'])){
         //все поля ввода назначаем переменной $fullFPL
@@ -81,15 +80,23 @@ $direction = $_POST['direction']; // Дирекция
     $field16 = preg_split('/[^A-Z\-\/]/', $str16[0], 4, PREG_SPLIT_NO_EMPTY);
     $field16 = $field16[0];
     //назначаем альтернативные аэропорты
-    $alternative1 = $str16[1];
-    $alternative2 = $str16[2];
+
+//проверяется если строики пустые, то заменяем NULL на пробел для корректного отображения.
+if ($str16[1] == '') {
+    $str16[1] = ' ';
+}
+if ($str16[2] == '') {
+    $str16[2] = ' ';
+}
+    $alternative = $str16[1].' '.$str16[2];
 
 //формируем 18 поле
     $field18 = $fplArray[8];
     $field118 = new parceRMK();
     $field18 = parceRMK::ParseRMK($field18);
 
-/**элемент тестирования будет использован для вывода ФПЛ из базы.
+
+/**
 echo $field1;
 echo '<br>';
 echo '-'.$field7;
@@ -98,14 +105,16 @@ echo '-'.$field13.$timeDeparture;
 echo '<br>';
 echo '-'.$field15;
 echo '<br>';
-echo '-'.$field16[0].$timeArrival[0].' '.$alternative1.' '.$alternative2;
+echo '-'.$field16[0].$timeArrival[0].' '.$alternative;
 echo '<br>';
 echo '-'.$field18;
 */
+
+
     $sqlAddFPL = 'INSERT INTO default_fpl(fplName,field1,field7,field13,timeDeparture,field15,field16,
-                                            timeArrival,alternative1,alternative2,author,direction,commentaries,field18) 
+                                            timeArrival,alternative,author,direction,commentaries,field18) 
                                     VALUES (:fplName,:field1,:field7,:field13,:timeDeparture,:field15,:field16,
-                                    :timeArrival,:alternative1,:alternative2,:author,:direction,:commentaries,:field18)';
+                                    :timeArrival,:alternative,:author,:direction,:commentaries,:field18)';
 
     $params = [ ':fplName' => $fplName,
                 ':field1' => $field1,
@@ -115,8 +124,7 @@ echo '-'.$field18;
                 ':field15' => $field15,
                 ':field16' => $field16,
                 ':timeArrival' => $timeArrival,
-                ':alternative1' => $alternative1,
-                ':alternative2' => $alternative2,
+                ':alternative' => $alternative,
                 ':author' => $author,
                 ':direction' => $direction,
                 ':commentaries' => $commentaries,
