@@ -198,19 +198,19 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
     </div>
 
     <p id="fplBody"><?php print_r($row['field1']); ?> <br>
-        -<?//7 поле
+        -<?php//7 поле
         print_r($row['field7']); ?> <br>
-        -<?//13 поле
+        -<?php//13 поле
         print_r($row['field13']);
         print_r($row['timeDeparture']); ?><br>
-        -<?//16 поле
+        -<?php//16 поле
         print_r($row['field15']);
         ?> <br>
-       -<? //17 поле
+       -<?php //17 поле
         print_r($row['field16']);
-        print_r($row['timeArrival']); ?> <? print_r($row['alternative1']); ?> <? print_r($row['alternative2']); ?>
+        print_r($row['timeArrival']); ?> <?php print_r($row['alternative']); ?>
         <br>
-        -<?//18 поле
+        -<?php//18 поле
         print_r($row['field18']); ?>
 
     </p>
