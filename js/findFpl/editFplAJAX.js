@@ -1,13 +1,21 @@
     $('button#editFplInBD').on('click', function () { //при нажатии на кнопку с классом close
-
+        var buttonValue = { //создается переменная которая хранит значение value кнопки
+            'buttonValue': this.value
+        };
+        var datastr = $('#editFplForm').serialize();
+        var databd = datastr + buttonValue;
 
         $.ajax({
             url: "/php/fpl/editFpl/editFplProcessor.php",
             type: "POST",
-            data: $('#editFplForm').serialize(),
+            data: datastr,
             dataType: "html",
             success: function (data) {
                 console.log(data);
+                alert(data);
+
+                $('#editFPLModal').modal('hide');
+                // $('#editFPLModal').modal('dispose');
 
             }
         });
