@@ -42,8 +42,8 @@ $id = $_POST['bdid'];
 
     }else{
         extract($_POST);
-        //$field15 = parceRMK::ParseRMK($field15);
-        //$field18 = parceRMK::ParseRMK($field18);
+        $field15 = parceRMK::ParseRMK($field15);
+        $field18 = parceRMK::ParseRMK($field18);
 
         $sqlEditFPL = 'UPDATE default_fpl SET fplName=:fplName,
                                               field1=:field1,
