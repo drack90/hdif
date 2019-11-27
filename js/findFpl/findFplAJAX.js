@@ -1,5 +1,6 @@
 //отправляет данные на обработчик из файла findFpl
 
+
 $('#searchFpl').on('click', function () {
     $.ajax({
         url: "/php/fpl/findFpl/findFplProcessor.php",
@@ -8,8 +9,11 @@ $('#searchFpl').on('click', function () {
         dataType: "html",
         success: function (data) {
             $('#results').html(data);
+
         }
+
     });
+
     event.preventDefault();
 
 });
@@ -55,7 +59,7 @@ $('button.deleteFpl').on('click', function () { //при нажатии на к�
 
 
 //сделать AJAX обработчик для редактирования FPL
-$('#editFpl').on('click', function () { //при нажатии на кнопку с классом close
+$('button.editFpl').on('click', function () {
     var buttonValue = { //создается переменная которая хранит значение value кнопки
         'buttonValue': this.value
     };
@@ -66,7 +70,6 @@ $('#editFpl').on('click', function () { //при нажатии на кнопк�
         dataType: "html",
         success: function (data) {
             $('#fplmodaledit').html(data);
-            // console.log(data);
             $('#editFPLModal').modal('show');
         }
     });
