@@ -1,4 +1,5 @@
 <? session_start(); ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/class/autoloadClass.php';?>
 
 
 <body id="page-top">
@@ -39,7 +40,8 @@
             </ul>
         </div>
             <div class="text-left" style="margin-right: 2rem">
-                <div class="text-left h6 text-primary"><? print_r($_SESSION['user_login']); ?></div>
+                <div class="text-left h6 text-primary"><?php new adminPanelButton();
+                                                                adminPanelButton::adminButton();?></div>
             </div>
             
 
