@@ -58,7 +58,7 @@
                         ?>
 
 
-                        <div class="card <? $val = new priorityColor;
+                        <div class="card <?php $val = new priorityColor;
                         echo $val->colorSelect($priority);
 
                         ?> " id="lending"> <!-- анимация появления -->
@@ -99,7 +99,7 @@
 
                             <!-- button 2 -->
                             <form class="form-inline my-2 my-md-2">
-                                <a class="btn btn-success" href="<?$_SERVER['DOCUMENT_ROOT']; ?>/index.php">Главная страница</a>
+                                <a class="btn btn-success" href="<?php $_SERVER['DOCUMENT_ROOT']; ?>/index.php">Главная страница</a>
 
                         </div>
                         <div class="col"></div>

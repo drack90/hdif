@@ -1,4 +1,4 @@
-<?php require $_SERVER["DOCUMENT_ROOT"] . "/php/auth/check_auth.php";?>
+<?php //require $_SERVER["DOCUMENT_ROOT"] . "/php/auth/check_auth.php";?>
 
 
 
