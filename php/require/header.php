@@ -32,9 +32,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Рабочая информация</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="<?php $_SERVER["DOCUMENT_ROOT"];?>/php/information/reglament.php">Регламенты</a>
+                        <a class="dropdown-item" href="<?php $_SERVER["DOCUMENT_ROOT"];?>/php/info_block/reglaments.php">Регламенты</a>
                         <a class="dropdown-item" href="<?php $_SERVER["DOCUMENT_ROOT"];?>/php/information/telephone.php">Телефоны</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </li>
             </ul>

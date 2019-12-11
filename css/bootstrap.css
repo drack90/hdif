@@ -5652,11 +5652,37 @@ a.badge-dark:focus, a.badge-dark.focus {
   text-decoration: none;
 }
 
+.close_red {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ff2100;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .2;
+}
+.close_red:hover {
+  color: #ff2100;
+  text-decoration: none;
+  text-shadow: #e9ff00;
+}
+.close_red:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
+  opacity: .75;
+}
+
 .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
   opacity: .75;
 }
 
 button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+button.close_red {
   padding: 0;
   background-color: transparent;
   border: 0;

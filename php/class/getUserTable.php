@@ -25,7 +25,11 @@ class getUserTable
                 <td><?php print_r($row['firstName']);?></td>
                 <td><?php print_r($row['lastName']);?></td>
                 <td><?php print_r($row['telephone']);?></td>
-                <td><input type="checkbox" id="checked-<?php print_r($row['id']);  ?>"></td>
+                <td><button type="button" class="deleteUser close_red " data-dismiss="alert" aria-label="Close"
+                            data-toggle="Close" data-placement="top" title="закрыть"
+                            value="<?php print_r($row['id']); ?>">
+                        <span aria-hidden="true">&times;</span>
+                    </button></td>
                 </tr>
 
                 <?php

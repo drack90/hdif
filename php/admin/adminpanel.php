@@ -29,27 +29,8 @@ echo '<br/><br/>';
 
             <div class="col-1"></div>
             <div class="col-10">
-
-                <table class="table">
-                    <thead class="thead-light">
-                    <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Логин</th>
-                        <th scope="col">Фамилия</th>
-                        <th scope="col">Имя</th>
-                        <th scope="col">Телефон</th>
-                        <th scope="col"><i class="fas fa-check"></i></th>
-                    </tr>
-                    </thead>
-                    <tbody class="table-striped">
-                        <?php //динамически выводим данные пользователей.
-                        new getUserTable();
-                        getUserTable::getDataUserInDb();
-                        ?>
-                    </tbody>
-                </table>
-
-            </div>
+<!--                отображение таблицы пользователей-->
+               <?php require 'userTable.php' ?>
             <div class="col-1"></div>
         </div>
         <div class="row">
@@ -58,8 +39,6 @@ echo '<br/><br/>';
                 <button type="button" class="btn btn-success" data-toggle="modal" style="margin-top: 10px" data-target="#add_user">
                     Добавить
                 </button>
-                <br>
-                <button type="button" class="btn btn-danger" style="margin-top: 10px">Удалить</button>
 
             </div>
             <div class="col-1"></div>
@@ -80,18 +59,26 @@ echo '<br/><br/>';
                         <div class="modal-body">
                             <form id="addUserForm">
                                 <label for="login">Логин сотрудника</label>
-                                <textarea class="form-control" id="login" name="login" rows="1"></textarea>
+                                <input class="form-control" id="login" name="login" placeholder="Фамилия и инициалы на английском " required autofocus>
                                 <div class="form-group">
                                     <label for="firstName">Фамилия</label>
-                                    <textarea class="form-control" id="firstName" name="firstName" rows="1"></textarea>
+                                    <input class="form-control" id="firstName" name="firstName" >
                                 </div>
                                 <div class="form-group">
                                     <label for="lastName">Имя</label>
-                                    <textarea class="form-control" id="lastName" rows="1" name="lastName"></textarea>
+                                    <input class="form-control" id="lastName" name="lastName">
                                 </div>
                                 <div class="form-group">
                                     <label for="telephone">Личный Номер</label>
-                                    <textarea class="form-control" id="telephone" rows="1" name="telephone" required></textarea>
+                                    <input class="form-control" id="telephone"  name="telephone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Пароль</label>
+                                    <input type="password" class="form-control" id="password"  name="password" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telephone">Повторите пароль</label>
+                                    <input type="password" class="form-control" id="verifyPassword"  name="verifyPassword" required>
                                 </div>
                             </form>
 
@@ -126,7 +113,5 @@ echo '<br/><br/>';
 
 
 ?>
-    <script src="https://kit.fontawesome.com/ca023ea9fc.js" crossorigin="anonymous"></script>
-    <script src="<?php $_SERVER['DOCUMENT_ROOT'];?> /js/admin/admin.js" crossorigin="anonymous"></script>
 
 
