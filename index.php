@@ -1,4 +1,5 @@
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/auth/check_auth.php"; ?>
+<?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/db.php"; ?>
 
 <!doctype html>
 <html lang="ru">
@@ -8,13 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/requireplugins.php';?> <!-- подключаем все плагины bootstrap and JS-->
+<?php require  $_SERVER['DOCUMENT_ROOT'] . '/php/require/requireplugins.php';?> <!-- подключаем все плагины bootstrap and JS-->
 
       <style>
         .collapse.in { display: inline !important; }
     </style>
 
-    <title><?php print_r ($config['tittle']); ?></title>
+    <title>How Do I Fly</title>
 </head>
 
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/header.php'; ?> <!-- Подключаем header -->

@@ -6,15 +6,15 @@
 <!-- Navigation -->
 
 <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top border" id="mainNav">
-    <a class="navbar-brand" href="<?$_SERVER["DOCUMENT_ROOT"];?>/index.php">
-        <img src="<?$_SERVER['DOCUMENT_ROOT'];?>/img/icon/icon_blue.svg" width="30" height="30" class="d-inline-block align-top" alt="" >
+    <a class="navbar-brand" href="<?php $_SERVER["DOCUMENT_ROOT"];?>/index.php">
+        <img src="<?php $_SERVER['DOCUMENT_ROOT'];?>/img/icon/icon_blue.svg" width="30" height="30" class="d-inline-block align-top" alt="" >
         How do I fly
     </a>
         <div class="container-fluid text-center">
             <div class="collapse navbar-collapse" id="navbarsExample04">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ">
-                    <a class="nav-link" href="<?$_SERVER["DOCUMENT_ROOT"];?>/index.php">Главная <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="<?php $_SERVER["DOCUMENT_ROOT"];?>/index.php">Главная <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="findFplPage" href="<?php $_SERVER['DOCUMENT_ROOT'];?>/php/fpl/findFpl/findFplPage.php"> FPL </a>
@@ -25,15 +25,15 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Геоточки</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="<?$_SERVER["DOCUMENT_ROOT"];?>/php/geopoint/geopoint.php">Добавить Геоточку</a>
-                        <a class="dropdown-item" href="<?$_SERVER["DOCIMENT_ROOT"];?>/php/geopoint/point_search_page.php">Поиск геоточки</a>
+                        <a class="dropdown-item" href="<?php $_SERVER["DOCUMENT_ROOT"];?>/php/geopoint/geopoint.php">Добавить Геоточку</a>
+                        <a class="dropdown-item" href="<?php $_SERVER["DOCIMENT_ROOT"];?>/php/geopoint/point_search_page.php">Поиск геоточки</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Рабочая информация</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="<?$_SERVER["DOCUMENT_ROOT"];?>/php/information/reglament.php">Регламенты</a>
-                        <a class="dropdown-item" href="<?$_SERVER["DOCUMENT_ROOT"];?>/php/information/telephone.php">Телефоны</a>
+                        <a class="dropdown-item" href="<?php $_SERVER["DOCUMENT_ROOT"];?>/php/information/reglament.php">Регламенты</a>
+                        <a class="dropdown-item" href="<?php $_SERVER["DOCUMENT_ROOT"];?>/php/information/telephone.php">Телефоны</a>
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </li>
@@ -46,7 +46,7 @@
             
 
         <form class="form-inline my-2 my-md-0" >
-            <a role="button" href="<?$_SERVER["DOCUMENT_ROOT"];?>/php/require/logout.php" class="btn btn-primary">Выход</a>
+            <a role="button" href="<?php $_SERVER["DOCUMENT_ROOT"];?>/php/require/logout.php" class="btn btn-primary">Выход</a>
         </form>
 
 
@@ -156,8 +156,8 @@
 
 
 
-<script src="<?$_SERVER['DOCUMENT_ROOT'];?>/js/findFpl/findFplAJAX.js"></script>
-<script src="<?$_SERVER['DOCUMENT_ROOT'];?>/js/addFPL/addFplAJAX.js"></script>
+<script src="<?php $_SERVER['DOCUMENT_ROOT'];?>/js/findFpl/findFplAJAX.js"></script>
+<script src="<?php $_SERVER['DOCUMENT_ROOT'];?>/js/addFPL/addFplAJAX.js"></script>
 
 
 </body>

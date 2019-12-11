@@ -28,7 +28,7 @@
     ?>
 
 
-            <div class="card <? $val = new priorityColor;
+            <div class="card <?php $val = new priorityColor;
                              echo $val->colorSelect($priority);
 
             ?> " id="lending"> <!-- анимация появления -->
@@ -37,7 +37,7 @@
                         <a class="text-black-50"><?php print_r($row['date']);?></a>
                     <?php new parceRMK(); //используем класс parceRMK для того что бы исправить возврат коретки текста, возвращаемого из MySQL
                    $text = parceRMK::ParseRMK($row['text']); ?>
-                        <span><? print_r($text);?></span>
+                        <span><?php print_r($text);?></span>
                         <!-- Если параметр 'admin' в сессии прописан - то показывать кнопку удаления текста-->
                         <?php
                         if(isset($_SESSION['user_login'])){
@@ -111,7 +111,7 @@
 
 
                     <div class="hide">
-                        <textarea class="text-hide" id="authorID" name="authorID"><?echo $_SESSION['user_login']; ?></textarea>
+                        <textarea class="text-hide" id="authorID" name="authorID"><?php echo $_SESSION['user_login']; ?></textarea>
                     </div>
 
                 </div>
