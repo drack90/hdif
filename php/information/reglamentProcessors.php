@@ -26,6 +26,14 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     <?php
 
 }
+
+/**
+ * id
+ * text
+ * name
+ * comments
+ *
+ */
 ?>
 
 
