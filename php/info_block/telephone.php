@@ -1,4 +1,3 @@
-<?php session_start();?>
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/auth/check_auth.php"; ?>
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; ?>
 <!doctype html>
@@ -21,15 +20,58 @@
 
 <main>
 
-    <div id="summernote">Hello Summernote</div>
+    
+  
 
 
-    <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/information/telephoneProcessor.php'?>
+    
     </div>
+ <div class="row">
+   <div class="col-2"></div>
+   <div class="col-8">
+     <form class="col 10 center" id="telephoneForm"  >
+         <textarea class="form-control" id="telephoneText" rows="3" name="telephoneText"  required></textarea>
 
+
+     </form>
+       <br>
+        <div class="row justify-content-between">
+                    <div class="col-6-right">
+                        <button id="telephoneSubmit" class="btn btn-primary">Отправить</button>
+                    </div>
+                   
+        </div>
+   </div>
+
+   <div class="col-2"></div>
+
+  </div>
+    <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/information/telephoneProcessor.php';?>
+    
 </main>
 <footer>
 
 </footer>
-<!-- include summernote css/js -->
+
 <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+
+  <script>
+
+      
+//производит отправку данных на файл addFplProcessor и закрытие модального окна
+ $('#telephoneSubmit').on('click', function () {
+     
+     $.ajax({
+         url: "/php/information/addTelephone.php",
+         type: "POST",
+         data: $('#telephoneForm').serialize(),
+         success: function (data) {
+             alert(data);
+             console.log(data);
+         }
+     });
+ });
+
+  </script>
+

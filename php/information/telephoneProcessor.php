@@ -1,8 +1,12 @@
 <?php
+require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php"; 
 
-$searchGeopointSql = "SELECT * FROM telephones";
+
+echo 'kekeke';
+
+$sql = "SELECT * FROM telephones";
 //$stmt->bindValue(':name', '%' . $geopointName . '%');
-$stmt = $pdo->prepare($searchGeopointSql);
+$stmt = $pdo->prepare($sql);
 $stmt->execute();
 
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -10,17 +14,15 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
     ?>
 
-    <div class="label-default">
         <div class="row">
             <div class="col-1"></div>
             <div class="col-11">
-                <b><h3><?print_r($row['comment']); ?></h3></b>
+                <b><h3><?php print_r($row['name']); ?></h3></b>
                 <br>
-                <span><?print_r($row['text']); ?></span>
+                <span><?php print_r($row['number']); ?></span>
             </div>
         </div>
 
-    </div>
 
 
     <?php
