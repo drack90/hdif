@@ -84,7 +84,7 @@ foreach($result as $value){
         }else{
             echo '<tr>';
         }
-        foreach($value as $value){
+        foreach($value as $val){
 
 
             // if ($_SESSION['lastName'] == $value  ){
@@ -99,16 +99,16 @@ foreach($result as $value){
             //                       echo '</td>';
             // }
 
-            switch ($value) {
+            switch ($val) {
                 case $_SESSION['lastName'] :
                     echo '<td bgcolor= #3ee664>';
-                    echo $value;
+                    echo $val;
                     echo '</td>';
                     break;
 
                 default:
                     echo "<td>";
-                    echo $value;
+                    echo $val;
                     echo '</td>';
                     break;
             }
