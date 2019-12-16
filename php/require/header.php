@@ -8,7 +8,7 @@
 <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top border" id="mainNav">
     <a class="navbar-brand" href="<?php $_SERVER["DOCUMENT_ROOT"];?>/index.php">
         <img src="<?php $_SERVER['DOCUMENT_ROOT'];?>/img/icon/icon_blue.svg" width="30" height="30" class="d-inline-block align-top" alt="" >
-        How do I fly
+        How do I fly <span style="font-size: 50%">beta</span>
     </a>
         <div class="container-fluid text-center">
             <div class="collapse navbar-collapse" id="navbarsExample04">
@@ -29,13 +29,13 @@
                         <a class="dropdown-item" href="<?php $_SERVER["DOCIMENT_ROOT"];?>/php/geopoint/point_search_page.php">Поиск геоточки</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Рабочая информация</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="<?php $_SERVER["DOCUMENT_ROOT"];?>/php/info_block/reglaments.php">Регламенты</a>
-                        <a class="dropdown-item" href="<?php $_SERVER["DOCUMENT_ROOT"];?>/php/info_block/telephone.php">Телефоны</a>
-                    </div>
-                </li>
+                <!--<li class="nav-item dropdown">-->
+                <!--    <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Рабочая информация</a>-->
+                <!--    <div class="dropdown-menu" aria-labelledby="dropdown04">-->
+                <!--        <a class="dropdown-item" href="<?php $_SERVER["DOCUMENT_ROOT"];?>/php/info_block/reglaments.php">Регламенты</a>-->
+                <!--        <a class="dropdown-item" href="<?php $_SERVER["DOCUMENT_ROOT"];?>/php/info_block/telephone.php">Телефоны</a>-->
+                <!--    </div>-->
+                <!--</li>-->
             </ul>
         </div>
             <div class="text-left" style="margin-right: 2rem">
