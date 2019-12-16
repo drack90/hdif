@@ -32,6 +32,11 @@
                         <label for="fplName">Имя FPL</label>
                         <input class="form-control" id="fplnName" name="fplName">
                     </div>
+                  
+                    <div>
+                        <label for="fplName">Номер ФПЛ</label>
+                        <input class="form-control" id="field1" name="field1">
+                    </div>
 
                     <div class="form-group">
                         <label for="field13">Взлет</label>
