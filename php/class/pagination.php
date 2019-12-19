@@ -91,7 +91,7 @@ class Pagination{
         // Отображаем сообщение о ссылках на другие страницы
         if ($this->showCount){
             $currentOffset = ($this->currentPage > 1)?($this->currentPage - 1)*$this->perPage:$this->currentPage;
-            $info = 'Показаны элементы с ' . $currentOffset . ' по ' ;
+            $info = 'Показаны элементы с ' . $currentOffset . ' по ' . '<br>' ;
 
             if( ($currentOffset + $this->perPage) < $this->totalRows )
                 $info .= $this->currentPage * $this->perPage;
@@ -119,7 +119,7 @@ class Pagination{
         // Выводим ссылку на первую страницу
         if($this->currentPage > $this->numLinks){
             $firstPageURL = str_replace($query_string_sep,'',$this->baseURL);
-            $output .= $this->firstTagOpen.'<li class="page-item" id="first-page"><a class="page-link" id="'.$firstPageURL.'" href="#">'.$this->firstLink.'</a></li>'.$this->firstTagClose;
+            $output .= $this->firstTagOpen.'<li class="page-item" id="first-page"><a class="page-link" id="1" href="#">'.$this->firstLink.'</a></li>'.$this->firstTagClose;
         }
         // Выводим ссылку на предыдущую страницу
         if($this->currentPage != 1){
