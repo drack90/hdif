@@ -8,27 +8,16 @@
 <?php
 include_once $_SERVER["DOCUMENT_ROOT"].'/php/class/pagination.php';
 
+$_GET['page'] = $_POST['page'];
 
         $limit = 10; //количество записей на страницу
         $offset = !empty($_GET['page'])?(($_GET['page']-1)*$limit):0;
-
+        unset($_POST['page']);
 
 
 
             // получаем общее количество записей в БД
             // это требуется для правильной работой с лимитом. класса pagination
-        $queryNum = ("SELECT COUNT(*) as id FROM default_fpl");
-        $queryNum = $pdo-> prepare($queryNum);
-        $queryNum->execute();
-        $resultNum = $queryNum->fetch(PDO::FETCH_ASSOC);
-        $rowCount = $resultNum['id'];
-        $pagConfig = array(
-            'baseURL'=>'http://hdif/php/fpl/findFpl/findFplPage.php',
-            'totalRows'=>$rowCount,
-            'perPage'=>$limit
-        );
-
-        $pagination = new Pagination($pagConfig);
 
 //проверяем, переданы ли вообще данные в POST запросе
 $i=0;
@@ -62,6 +51,7 @@ foreach ($_POST as $key => $val){
 
 
 $sql = "SELECT * FROM default_fpl ";
+$sqlCountReq = "SELECT COUNT(*) FROM default_fpl";
 $where = '';
 
 
@@ -98,7 +88,11 @@ if (!empty($where)) {
     if (isset($authorRequest)) {
         $sqlReq .= ' AND author = :author';
     }
+
+    $sqlCount = $sqlReq; //задаём переменную содержащую сгенерированную строку с запросом
+                        // для того что бы использовать её в запросе COUNT
     $sqlReq .= ' LIMIT ';
+
     $complete_sql = $sqlReq;
 
     //добавляем данные которые позволят Нам изменять их из конфига в начале скрипта.
@@ -121,12 +115,32 @@ if (isset($authorRequest)) {
     $params[':author'] = $authorRequest;
 }
 
+$sqlCountReq .= $sqlCount;
+$queryNum = $pdo-> prepare($sqlCountReq);
+$queryNum->execute($params);
+$resultNum = $queryNum->fetch(PDO::FETCH_ASSOC);
+
+$rowCount = $resultNum['COUNT(*)'];
+
+
+
+$pagConfig = array(
+    'baseURL'=>'http://hdif/php/fpl/findFpl/findFplPage.php',
+    'totalRows'=>$rowCount,
+    'perPage'=>$limit
+);
+
+$pagination = new Pagination($pagConfig);
+
 //формируем полный запрос
 $sql .= $complete_sql;
 
 $stmt = $pdo->prepare($sql);
 $stmt->execute($params);
 $executeRow = $stmt->rowCount();
+
+
+
 
 //если PDO вернул 0 строк - вывести запись о том что строк не найдено
 
