@@ -26,7 +26,7 @@
 </div>
         <br>
         <br>
-<div id='timeTable'><?php //require $_SERVER['DOCUMENT_ROOT'].'/php/timetable/getTimeTable.php';?>
+<div id='timeTable'>
 <div class="row">
 
     <div class="col-1"></div>
@@ -34,7 +34,7 @@
         <div class="card-title text-center text-primary"><span class="h2">График работы</span>
         </div>
         <br>
-
+        <?php //require $_SERVER['DOCUMENT_ROOT'].'/php/timetable/getTimeTable.php';?>
         <div style="align-content: center;">
         <iframe frameborder="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTURI_HdtdKnpHozeLDpYLbtl_nk9goeqVkewuXGlyhfhBmBeOcJsDnDDRoSHNNPY8vWTdsKozU3KMJ/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false"
                 width="100%" height="450px" ></iframe>
@@ -50,8 +50,14 @@
 
 </div>
     </main>
-</html>
 
+<footer>
+
+<?php require $_SERVER['DOCUMENT_ROOT'].'/php/require/footer.php'; ?>
+
+</footer>
+
+</html>
 
 
 

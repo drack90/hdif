@@ -127,7 +127,6 @@ foreach($result as $value){
 echo '<br><br>';
 
 
-exit;
 
 //фориач резултс 12
 
