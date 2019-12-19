@@ -76,7 +76,6 @@ $('a.page-link').on('click',function () {
         url: "/php/journal/view_all_journal.php",
         type: "GET",
         success: function (html) {
-            console.log(numberPage);
             //location.reload(); //производит перезагрузку страници.
             $("#content_block").html(html); //загружает в центральный DOM данные из файла.
         }
