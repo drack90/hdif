@@ -1,6 +1,5 @@
 //отправляет данные на обработчик из файла findFpl
 
-
 $('#searchFpl').on('click', function () {
     $.ajax({
         url: "/php/fpl/findFpl/findFplProcessor.php",
@@ -17,6 +16,26 @@ $('#searchFpl').on('click', function () {
     event.preventDefault();
 
 });
+
+//тоже самое что и первное, только на нажатие кнопки enter на клавиатуре
+
+$('html').keydown(function(e){ //отлавливаем нажатие клавиш
+    if (e.keyCode == 13) { //если нажали Enter, то true
+        $.ajax({
+            url: "/php/fpl/findFpl/findFplProcessor.php",
+            type: "POST",
+            data: $('#findFpl').serialize(),
+            dataType: "html",
+            success: function (data) {
+                $('#results').html(data);
+
+            }
+
+        });
+    }
+});
+
+
 
 
         //Обработчик для удаления FPL из БД
