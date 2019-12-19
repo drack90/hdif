@@ -27,6 +27,7 @@ $('html').keydown(function(e){ //отлавливаем нажатие клав�
             data: $('#findFpl').serialize(),
             dataType: "html",
             success: function (data) {
+
                 $('#results').html(data);
 
             }
@@ -108,13 +109,11 @@ $('a.page-link').on('click',function () {
     };
     var dataForm = $('#findFpl').serializeArray();
     dataForm.push(numberPage);
-    console.log(dataForm);
     $.ajax({
         data: dataForm,
         url: "/php/fpl/findFpl/findFplProcessor.php",
         type: "POST",
         success: function (html) {
-            console.log(numberPage);
             //location.reload(); //производит перезагрузку страници.
             $("#results").html(html); //загружает в центральный DOM данные из файла.
         }
