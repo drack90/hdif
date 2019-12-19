@@ -8,19 +8,11 @@
 
 
 
-     <?php
-    //
-    // $sqljournal = "SELECT * FROM journal ORDER BY id DESC LIMIT 50";
-    //
-    // $stmt = $pdo->prepare($sqljournal);
-    // $stmt->execute();
-     ?>
 
     <?php
     //подключаем файл класса pagination
     include_once $_SERVER["DOCUMENT_ROOT"].'/php/class/pagination.php';
     //инициализируем класс
-
 
 
 

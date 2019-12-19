@@ -12,6 +12,7 @@
 
             dataType: "html",
             success: function (html) {
+                $('#accessButtonJournal').off('click');
                 $('#addJournalPostModal').modal('hide'); //происходит закрытие модального окна
                 alert('Запись добавлена'); //всплывающее окно о том что запись добавлена
                 //производит обновление блока с записями
@@ -53,6 +54,7 @@
                        type: "POST",
                        dataType: "html",
                        success: function (html) {
+                           $('button.deletePost').off('click');
                            location.reload(); //производит перезагрузку страници.
                            //$("#journal_content").load("/php/journal/view_journal.php");
                            alert(html);
