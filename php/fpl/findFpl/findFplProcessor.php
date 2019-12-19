@@ -6,6 +6,29 @@
 
 
 <?php
+include_once $_SERVER["DOCUMENT_ROOT"].'/php/class/pagination.php';
+
+
+        $limit = 10; //количество записей на страницу
+        $offset = !empty($_GET['page'])?(($_GET['page']-1)*$limit):0;
+
+
+
+
+            // получаем общее количество записей в БД
+            // это требуется для правильной работой с лимитом. класса pagination
+        $queryNum = ("SELECT COUNT(*) as id FROM default_fpl");
+        $queryNum = $pdo-> prepare($queryNum);
+        $queryNum->execute();
+        $resultNum = $queryNum->fetch(PDO::FETCH_ASSOC);
+        $rowCount = $resultNum['id'];
+        $pagConfig = array(
+            'baseURL'=>'http://hdif/php/fpl/findFpl/findFplPage.php',
+            'totalRows'=>$rowCount,
+            'perPage'=>$limit
+        );
+
+        $pagination = new Pagination($pagConfig);
 
 //проверяем, переданы ли вообще данные в POST запросе
 $i=0;
@@ -75,8 +98,13 @@ if (!empty($where)) {
     if (isset($authorRequest)) {
         $sqlReq .= ' AND author = :author';
     }
-    $sqlReq .= ' LIMIT 50';
+    $sqlReq .= ' LIMIT ';
     $complete_sql = $sqlReq;
+
+    //добавляем данные которые позволят Нам изменять их из конфига в начале скрипта.
+    $complete_sql .= $offset;
+    $complete_sql .= ',';
+    $complete_sql .= $limit;
 
 }
 
@@ -226,6 +254,23 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
 <?php }
 endwhile;
 ?>
+
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <div class="pagination">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+
+                    <?php echo $pagination->createLinks(); ?>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="col-3"></div>
+</div>
+
 <div id="fplmodaledit"></div>
 <script src="<?$_SERVER['DOCUMENT_ROOT'];?>/js/findFpl/findFplAJAX.js"></script>
 

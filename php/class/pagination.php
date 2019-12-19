@@ -125,7 +125,7 @@ class Pagination{
         if($this->currentPage != 1){
             $i = ($uriPageNum - 1);
             if($i == 0) $i = '';
-            $output .= $this->prevTagOpen.'<li class="page-item" id="previous-page"><a class="page-link" id="'.$this->baseURL.$i.'" href="#">'.$this->prevLink.'</a></li>'.$this->prevTagClose;
+            $output .= $this->prevTagOpen.'<li class="page-item" id="previous-page"><a class="page-link" id="'.$i.'" href="#">'.$this->prevLink.'</a></li>'.$this->prevTagClose;
         }
         // Выводим цифровые ссылки
         for($loop = $start -1; $loop <= $end; $loop++){
@@ -134,19 +134,19 @@ class Pagination{
                 if($this->currentPage == $loop){
                     $output .= $this->curTagOpen.'<li class="page-item active" aria-current="page"> <a class="page-link" href="#">'.$loop.'<span class="sr-only">(current)</span></a></li>'.$this->curTagClose;
                 }else{
-                    $output .= $this->numTagOpen.'<li class="page-item" ><a class="page-link" id="'.$this->baseURL.$i.'" href="#">'.$loop.'</a></li>'.$this->numTagClose;
+                    $output .= $this->numTagOpen.'<li class="page-item" ><a class="page-link" id="'.$i.'" href="#">'.$loop.'</a></li>'.$this->numTagClose;
                 }
             }
         }
         // Выводим ссылку на следующую страницу
         if($this->currentPage < $numPages){
             $i = ($this->currentPage + 1);
-            $output .= $this->nextTagOpen.'<li class="page-item" id="next-page"><a class="page-link" id="'.$this->baseURL.$i.'" href="#">'.$this->nextLink.'</a></li>'.$this->nextTagClose;
+            $output .= $this->nextTagOpen.'<li class="page-item" id="next-page"><a class="page-link" id="'.$i.'" href="#">'.$this->nextLink.'</a></li>'.$this->nextTagClose;
         }
         // Выводим ссылку на последнюю страницу
         if(($this->currentPage + $this->numLinks) < $numPages){
             $i = $numPages;
-            $output .= $this->lastTagOpen.'<li class="page-item" id="end-page"><a class="page-link" id="' .$this->baseURL.$i. '" href="#">'.$this->lastLink.'</a></li>'.$this->lastTagClose;
+            $output .= $this->lastTagOpen.'<li class="page-item" id="end-page"><a class="page-link" id="' .$i. '" href="#">'.$this->lastLink.'</a></li>'.$this->lastTagClose;
         }
         // Удаляем двойные косые
         $output = preg_replace("#([^:])//+#", "\1/", $output);
