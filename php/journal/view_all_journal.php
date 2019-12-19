@@ -14,7 +14,6 @@
     include_once $_SERVER["DOCUMENT_ROOT"].'/php/class/pagination.php';
     //инициализируем класс
 
-print_r($_GET);
 
 
     $limit = 25; //количество записей на страницу
