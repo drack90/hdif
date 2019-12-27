@@ -8,16 +8,16 @@ class postFpl extends parceRMK
     public $direction;
     public $fullFpl;
 
-        public function __construct($_POST)
+    public function __construct()
         {
             $this->fplName=$_POST['FPL_name'];
-            $this->author = $_POST['author'];
+            $this->author = $_SESSION['user_login'];
             $this->commentaries = $_POST['commentaries'];
             $this->direction = $_POST['direction'];
         }
 
         //класс определяет какой тип Fpl был передан
-        public function defineTypeFpl($_POST)
+    public function defineTypeFpl()
         {
             if (isset($_POST['notStandartFPL'])){
                 $this->postNotStandartFpl();
@@ -29,10 +29,9 @@ class postFpl extends parceRMK
             //подготавливается текст для передачи в БД
         public function prepareNotStandartFpl()
         {
-            $this->fullFpl = $_POST['FPL'];
-            $this->fullFpl = new parceRMK();
-            $this->fullFpl = parceRMK::ParseRMK($this->fullFpl);
-            $fullFpl = $this->fullFpl;
+            $fullFpl = $_POST['FPL'];
+            $fullFpl = new parceRMK();
+            $fullFpl = parceRMK::ParseRMK($this->fullFpl);
             return $fullFpl;
         }
 
@@ -40,7 +39,9 @@ class postFpl extends parceRMK
         private function postNotStandartFpl()
         {
             //вызываем метод подготовки нестандартного ФЛП.
-            $this->prepareNotStandartFpl();
+            $fullFPL = $this->prepareNotStandartFpl();
+            require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php";
+
 
             //формируем запрос в базу. 15 поле - используем как хранилище информации добавленной пользователем
             $sqlAddFPL = 'INSERT INTO default_fpl(fplName,field15,author,direction,commentaries,notFPL) 
@@ -58,8 +59,8 @@ class postFpl extends parceRMK
             $stmt = $pdo->prepare($sqlAddFPL);
             $stmt->execute($params);
 
-            return 'Данные добавлены в БД.';
-            exit;
+            echo 'Данные добавлены в БД.';
+
         }
 
             //Производит разбиение текста на формализованный массив, для того, что бы записать в БД
@@ -90,7 +91,7 @@ class postFpl extends parceRMK
             $timeDeparture = $str13[4].$str13[5].$str13[6].$str13[7];
 
             //формируем поле 15, используем класс ParseRMK что бы заменить все символы возврата каретки на символы <br>
-            $field15 = new parceRMK();
+            new parceRMK();
             $field15 = parceRMK::ParseRMK($fplArray[6]);
 
 
@@ -117,26 +118,32 @@ class postFpl extends parceRMK
 
             //формируем 18 поле
             $field18 = $fplArray[8];
-            $field118 = new parceRMK();
+            new parceRMK();
             $field18 = parceRMK::ParseRMK($field18);
 
-            $fplArray = [$field1,
-                        $field7,
-                        $field13,
-                        $field15,
-                        $field16,
-                        $field18,
-                        $timeDeparture,
-                        $timeArrival,
-                        $alternative];
+
+            $fplArray = ['field1' => $field1,
+                'field7' => $field7,
+                'field13' => $field13,
+                'field15' => $field15,
+                'field16' => $field16,
+                'field18' => $field18,
+                'timeDeparture' => $timeDeparture,
+                'timeArrival' => $timeArrival,
+                'alternative' => $alternative];
 
             return $fplArray;
         }
 
             //производит запись формализированного FPL в БД
-        private function postStandartFpl()
+    private function postStandartFpl()
         {
-            $this->prepareStandartFpl($_POST['FPL']);
+            $fplArray = $this->prepareStandartFpl();
+            require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php";
+            //раскладываем полученный массив на переменные
+            extract($fplArray, EXTR_OVERWRITE);
+
+
 
             $sqlAddFPL = 'INSERT INTO default_fpl(fplName,field1,field7,field13,timeDeparture,field15,field16,
                                                 timeArrival,alternative,author,direction,commentaries,field18) 
@@ -144,24 +151,26 @@ class postFpl extends parceRMK
                                         :timeArrival,:alternative,:author,:direction,:commentaries,:field18)';
 
             $params = [ ':fplName' => $this->fplName,
-                ':field1' => $fplArray['field1'],
-                ':field7' => $fplArray['field7'],
-                ':field13' => $fplArray['field13'],
-                ':timeDeparture' => $fplArray['timeDeparture'],
-                ':field15' => $fplArray['field15'],
-                ':field16' => $fplArray['field16'],
-                ':timeArrival' => $fplArray['timeArrival'],
-                ':alternative' => $fplArray['alternative'],
+                ':field1' => $field1,
+                ':field7' => $field7,
+                ':field13' => $field13,
+                ':timeDeparture' => $timeDeparture,
+                ':field15' => $field15,
+                ':field16' => $field16,
+                ':timeArrival' => $timeArrival,
+                ':alternative' => $alternative,
                 ':author' => $this->author,
                 ':direction' => $this->direction,
                 ':commentaries' => $this->commentaries,
-                ':field18' => $fplArray['field18']];
+                ':field18' => $field18];
+
+
 
 
             $stmt = $pdo->prepare($sqlAddFPL);
             $stmt->execute($params);
 
-            return 'Данные добавлены в Базу.';
+            echo 'Данные добавлены в Базу.';
         }
             //записать FPL
         public function addFpl()
