@@ -70,7 +70,7 @@
 
             <div class="modal-body">
 
-                <form class="col 10 center" id="addFplForm" >
+                <form class="col 10 center" id="addFplForm" enctype="multipart/form-data">
 
 
                     <div class="form-group">
@@ -123,13 +123,12 @@
                     <div class="form-group">
                         <div class="row justify-content-between">
                             <div class="col-10">
-                                <label class="h6" for="add_file" >Загрузить изображение</label>
 
-                                <textarea class="form-control" id="image" name="image" rows="1"></textarea>
-                            </div>
-                            <div class="col-2">
-                                <p class="h6" style="opacity: 0.0;"> space</p>
-                                <button class="btn btn-primary" >загрузить</button>
+                                <div class="form-group">
+                                    <label for="image">Загрузка изображения</label>
+                                    <input type="file" class="form-control-file" id="image">
+                                </div>
+
                             </div>
                         </div>
                     </div>
