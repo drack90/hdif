@@ -8,6 +8,7 @@ class postFpl extends parceRMK
     public $direction;
     public $fullFpl;
 
+
     public function __construct()
         {
             $this->fplName=$_POST['FPL_name'];
@@ -44,8 +45,8 @@ class postFpl extends parceRMK
 
 
             //формируем запрос в базу. 15 поле - используем как хранилище информации добавленной пользователем
-            $sqlAddFPL = 'INSERT INTO default_fpl(fplName,field15,author,direction,commentaries,notFPL) 
-                                    VALUES (:fplName,:field15,:author,:direction,:commentaries,:notFPL)';
+            $sqlAddFPL = 'INSERT INTO default_fpl(fplName,field15,author,direction,commentaries,notFPL,image) 
+                                    VALUES (:fplName,:field15,:author,:direction,:commentaries,:notFPL, :image)';
 
             $params = [':fplName' => $this->fplName,
                 ':field15' => $fullFPL,
@@ -53,6 +54,7 @@ class postFpl extends parceRMK
                 ':direction' => $this->direction,
                 ':commentaries' => $this->commentaries,
                 ':notFPL' => '1',
+                ':image' => $imageName,
             ];
 
 
@@ -138,7 +140,8 @@ class postFpl extends parceRMK
             //производит запись формализированного FPL в БД
     private function postStandartFpl()
         {
-            $fplArray = $this->prepareStandartFpl();
+
+            $fplArray = $this->prepareStandartFpl($imageName);
             require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php";
             //раскладываем полученный массив на переменные
             extract($fplArray, EXTR_OVERWRITE);
@@ -146,9 +149,9 @@ class postFpl extends parceRMK
 
 
             $sqlAddFPL = 'INSERT INTO default_fpl(fplName,field1,field7,field13,timeDeparture,field15,field16,
-                                                timeArrival,alternative,author,direction,commentaries,field18) 
+                                                timeArrival,alternative,author,direction,commentaries,field18,image) 
                                         VALUES (:fplName,:field1,:field7,:field13,:timeDeparture,:field15,:field16,
-                                        :timeArrival,:alternative,:author,:direction,:commentaries,:field18)';
+                                        :timeArrival,:alternative,:author,:direction,:commentaries,:field18, :image)';
 
             $params = [ ':fplName' => $this->fplName,
                 ':field1' => $field1,
@@ -162,7 +165,8 @@ class postFpl extends parceRMK
                 ':author' => $this->author,
                 ':direction' => $this->direction,
                 ':commentaries' => $this->commentaries,
-                ':field18' => $field18];
+                ':field18' => $field18,
+                ':image' => $imageName];
 
 
 
