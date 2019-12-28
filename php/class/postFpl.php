@@ -7,7 +7,7 @@ class postFpl extends parceRMK
     public $commentaries;
     public $direction;
     public $fullFpl;
-
+    public $imageName;
 
     public function __construct()
         {
@@ -15,6 +15,7 @@ class postFpl extends parceRMK
             $this->author = $_SESSION['user_login'];
             $this->commentaries = $_POST['commentaries'];
             $this->direction = $_POST['direction'];
+            $rhis->imageName = $GLOBALS['imageName'];
         }
 
         //класс определяет какой тип Fpl был передан
@@ -54,7 +55,7 @@ class postFpl extends parceRMK
                 ':direction' => $this->direction,
                 ':commentaries' => $this->commentaries,
                 ':notFPL' => '1',
-                ':image' => $imageName,
+                ':image' => $this->imageName,
             ];
 
 
@@ -166,7 +167,7 @@ class postFpl extends parceRMK
                 ':direction' => $this->direction,
                 ':commentaries' => $this->commentaries,
                 ':field18' => $field18,
-                ':image' => $imageName];
+                ':image' => $this->imageName];
 
 
 

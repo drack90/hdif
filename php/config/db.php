@@ -21,7 +21,7 @@ if ($connection == false)
 
 $driver = 'mysql';
 $host = 'localhost';
-$db_name = 'hdif';
+$db_name = 'default_fpl';
 $db_user = 'root';
 $db_password = '';
 $charset = 'utf8';

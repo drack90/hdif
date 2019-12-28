@@ -22,7 +22,7 @@ if(!empty($login) && !empty($password) ) {
             $_SESSION['admin'] = $user->admin;
 
            //Назначаем суперглобавльному массиву значение login.
-                header('location: http://hdif/index.php');
+                header('location: ../../index.php');
         }else  {
             echo "не верный логин и пароль";
         }
