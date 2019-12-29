@@ -28,5 +28,4 @@ require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php";
     </form>
 <div id="script">
     <script src="https://kit.fontawesome.com/ca023ea9fc.js" crossorigin="anonymous"></script>
-    <script src="<?php $_SERVER['DOCUMENT_ROOT'];?> /js/admin/admin.js" crossorigin="anonymous"></script>
 </div>
