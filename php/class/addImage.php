@@ -10,7 +10,7 @@ class addImage
     {
 
         //забираем информацию о файл PATHINFO_EXTENSION (4) забирает только информацию о формате файла
-        $extension = pathinfo($image['image'], PATHINFO_EXTENSION);
+        $extension = pathinfo($image['name'], PATHINFO_EXTENSION);
         //генерируется уникальное имя + формат файла
         $imageName = uniqid() . "." . $extension;
         //переносим файл из папки temp в папку uploads

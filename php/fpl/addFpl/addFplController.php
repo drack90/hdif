@@ -17,13 +17,6 @@
 //
 //exit;
 
-
-$imageName = new addImage();
-$imageName = $imageName->uploadImage($_FILES['image']);
-var_dump($_SESSION['imageName']);
-echo $imageName;
-exit;
-
-
 $addfpl = new postFpl();
+
 $addfpl->addFpl();

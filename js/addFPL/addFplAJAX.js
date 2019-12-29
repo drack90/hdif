@@ -16,7 +16,7 @@ $('#addFplInBD').on('click', function () {
 
 // Создадим данные формы и добавим в них данные файлов из files
 //РАБОТАЕТ -> файл передается, но как передать ещё данные формы?!
-    if (files != '') {
+
 
         data = new FormData();
 
@@ -26,24 +26,27 @@ $('#addFplInBD').on('click', function () {
 
 
         $.ajax({
-            url: "/php/fpl/addFpl/addFplController.php",
+            url: "/php/fpl/addFpl/addImageController.php",
             type: "POST",
             processData: false,
             contentType: false, //когда делаю так - перестаёт работать
             data: data,
             success: function (data) {
+                console.log(data);
+                $.ajax({
+                    url: "/php/fpl/addFpl/addFplController.php",
+                    type: "POST",
+                    data: $('#addFplForm').serialize(),
+                    success: function (data) {
+                        alert(data);
+                        $('#addFPLModal').modal('hide'); //закрывает модальное окно
+                    }
+                });
+
                 //$('#addFPLModal').modal('hide'); //закрывает модальное окно
             }
 
         });
-    }
-    $.ajax({
-        url: "/php/fpl/addFpl/addFplController.php",
-        type: "POST",
-        data: $('#addFplForm').serialize(),
-        success: function (data) {
-            alert(data);
-            $('#addFPLModal').modal('hide'); //закрывает модальное окно
-        }
-    });
+
+
 });
