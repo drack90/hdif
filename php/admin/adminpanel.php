@@ -85,13 +85,17 @@ echo '<br/><br/>';
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary add_user" >Добавить пользователя</button>
+                            <button type="button" class="btn btn-primary add_user" id="addUserButton">Добавить
+                                пользователя
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
 
     </main>
+    <script src="<?php $_SERVER['DOCUMENT_ROOT']; ?> /js/admin/admin.js" crossorigin="anonymous"></script>
+
     <?php
 
 
