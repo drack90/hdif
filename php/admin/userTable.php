@@ -27,5 +27,6 @@ require $_SERVER["DOCUMENT_ROOT"] . "/php/config/config.php";
             </div>
     </form>
 <div id="script">
+    <script src="<?php $_SERVER['DOCUMENT_ROOT']; ?> /js/admin/deleteUser.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ca023ea9fc.js" crossorigin="anonymous"></script>
 </div>
