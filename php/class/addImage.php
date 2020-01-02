@@ -8,7 +8,7 @@ class addImage
 
     function uploadImage($image)
     {
-
+      
         //забираем информацию о файл PATHINFO_EXTENSION (4) забирает только информацию о формате файла
         $extension = pathinfo($image['name'], PATHINFO_EXTENSION);
         //генерируется уникальное имя + формат файла
@@ -17,8 +17,8 @@ class addImage
         move_uploaded_file($image['tmp_name'],
             $_SERVER['DOCUMENT_ROOT'] . '/img/fpl_image/' . $imageName);
 
-        $_SESSION['imageName'] = $imageName;
-
+        
+        $GLOBALS['imageName'] = $imageName;
         return $imageName;
     }
 
