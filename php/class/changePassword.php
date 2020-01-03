@@ -16,33 +16,55 @@ class changePassword
         $this->verifyPassword = $_POST['verifyPassword'];
         $this->login = $_SESSION['user_login'];
 
+
+    }
+
+    //проверка поступающих данных на соответствие.
+    public function verifyPostData()
+    {
+        if ($this->newPassword == $this->verifyPassword) {
+            //выбираем хэш пароля
+            $this->newPassword = password_hash($this->newPassword, PASSWORD_DEFAULT);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     //функиця производит сверку пароля и если пароль совпадает возвращает true
     public function verifyPassword()
     {
-        $sql = 'SELECT login, password, telephone, admin FROM  users  WHERE login = :login';
-        $params = [':login' => $this->login,];
-        $verifyPassrd = $pdo->prepare($sql);
-        $verifyPassrd->execute($params);
+        if ($this->verifyPostData() == true) {
 
-        $user = $verifyPassrd->fetch(PDO::FETCH_OBJ);
+            $sql = 'SELECT login, password, telephone, admin FROM  users  WHERE login = :login';
+            $params = [':login' => $this->login,];
+            $verifyPassrd = $pdo->prepare($sql);
+            $verifyPassrd->execute($params);
 
-        if ($user) {
-            if (password_verify($this->oldPassword, $user->password)) {
-                return true;
-            } else {
-                return false;
+            $user = $verifyPassrd->fetch(PDO::FETCH_OBJ);
+
+            if ($user) {
+                if (password_verify($this->oldPassword, $user->password)) {
+                    return true;
+                } else {
+                    return false;
+                }
             }
+        } else {
+            return "Новый пароль и проверка пароля не совпадают.";
         }
-
     }
 
     public function changePassword()
     {
+
         if ($this->verifyPassword() == true) {
-            //sql PDO запрос на замену пароля в MD HASH
-            
+            $sqlChangePassword = 'UPDATE users SET password = :password WHERE login=:login';
+            $params = [':login' => $this->login,
+                ':password' => $this->newPassword];
+            $verifyPassrd = $pdo->prepare($sqlChangePassword);
+            $verifyPassrd->execute($params);
+
         }
 
     }
