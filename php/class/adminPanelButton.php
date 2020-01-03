@@ -19,8 +19,12 @@ public static function adminButton(){
     }else{
         //если условие ложно - выводим просто имя
         ?>
+        <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/admin/changeUserPassword.php' ?>
+        <a href="#" id="changeUserPasswordButton">
+            <? print_r($_SESSION['user_login']); ?></a>
+        <script src="<?php $_SERVER['DOCUMENT_ROOT']; ?>/js/user/changeUserPassword.js"></script>
 
-        <? print_r($_SESSION['user_login']); ?>
+
 <?php
     }
 }
