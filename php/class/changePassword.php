@@ -22,6 +22,14 @@ class changePassword
     //проверка поступающих данных на соответствие.
     public function verifyPostData()
     {
+        if (count($this->newPassword) < 4) {
+            die('пароль должен содержать больше 4 символов');
+        }
+
+        if (count($this->verifyPassword) < 4) {
+            die('пароль должен содержать больше 4 символов');
+        }
+
         if ($this->newPassword == $this->verifyPassword) {
             //выбираем хэш пароля
             $this->newPassword = password_hash($this->newPassword, PASSWORD_DEFAULT);
@@ -51,7 +59,7 @@ class changePassword
                 }
             }
         } else {
-            return "Новый пароль и проверка пароля не совпадают.";
+            return "Не верно введен старый пароль";
         }
     }
 
