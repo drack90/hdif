@@ -6,7 +6,7 @@ $config = array(
         'server' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'db_name' => 'default_fpl'
+        'db_name' => 'hdif'
     )
 );
 

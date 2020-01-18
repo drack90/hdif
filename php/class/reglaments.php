@@ -20,5 +20,23 @@ class reglaments
 
     }
 
+    public static function editReglaments($data){
+        require $_SERVER["DOCUMENT_ROOT"] . '/php/config/config.php';
+        $updateReglamentsSql = "UPDATE reglaments SET reglament=:reglament WHERE id='1' ";
+        $data = [':reglament' => $data];
+        $getQuery = $pdo->prepare($updateReglamentsSql);
+        $result = $getQuery->execute($data);
+
+        if ($result == false){
+          return 'Произошла ошибка при обновлении информации';
+        }else{
+            return 'Регламенты обновлены';
+        }
+        $getQuery = null;
+        $data = null;
+        $updateReglamentsSql = null;
+        $result = null;
+    }
+
 
 }

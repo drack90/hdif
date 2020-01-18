@@ -72,7 +72,7 @@ class changePassword
                 ':password' => $this->newPassword];
             $verifyPassrd = $pdo->prepare($sqlChangePassword);
             $verifyPassrd->execute($params);
-
+                
         }
 
     }

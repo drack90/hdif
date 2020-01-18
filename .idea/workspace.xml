@@ -1,193 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="317d239a-c81f-4c82-bfa4-fa8f3eb0c4dc" name="Default" comment="создан тестовый файл для">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/google.yml" beforeDir="false" />
+    <list default="true" id="317d239a-c81f-4c82-bfa4-fa8f3eb0c4dc" name="Default" comment="class for add fpl in DB">
+      <change afterPath="$PROJECT_DIR$/img/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/information/point_search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/reglaments/editReglamentsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/fpl/editFpl/editFplProcessor.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fpl/editFpl/editFplProcessor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/fpl/findFpl/findFplPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fpl/findFpl/findFplPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/fpl/findFpl/findFplProcessor.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fpl/findFpl/findFplProcessor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/reglaments.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/reglaments.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/user/changeUserPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/user/changeUserPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/class/changePassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class/changePassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/class/reglaments.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class/reglaments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/config/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/config/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/fpl/addFpl/addFplController.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fpl/addFpl/addFplController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/fpl/addFpl/addFplProcessor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/require/requireplugins.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/require/requireplugins.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.42555755">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="getTimetable.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/timetable/getTimetable.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="20">
-                  <caret line="82" column="39" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CHG.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/php/information/CHG.php">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="40">
-                  <caret line="2" selection-start-line="2" selection-end-line="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="search_point.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/geopoint/search_point.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="800">
-                  <caret line="40" selection-start-line="40" selection-end-line="40" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="addUser.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/admin/addUser.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="add_point.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/geopoint/add_point.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret selection-end-line="19" selection-end-column="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="point_search_page.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/geopoint/point_search_page.php">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file leaf-file-name="geopoint.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/geopoint/geopoint.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="880">
-                  <caret line="44" column="23" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="44" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="findFplProcessor.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/fpl/findFpl/findFplProcessor.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="view_journal.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/journal/view_journal.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="400">
-                  <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="21" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pagination.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/class/pagination.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="660">
-                  <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
-                  <folding>
-                    <element signature="e#25#32#1" expanded="true" />
-                    <element signature="e#25#32#1" expanded="true" />
-                    <element signature="e#0#6#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/config/config.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="20">
-                  <caret line="1" selection-start-line="1" selection-end-line="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/config/db.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="getUserTable.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/class/getUserTable.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="580">
-                  <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-                  <folding>
-                    <element signature="e#6#79#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="adminpanel.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/php/admin/adminpanel.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="20">
-                  <caret line="1" selection-start-line="1" selection-end-line="5" selection-end-column="61" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/admin/admin.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="100">
-                  <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="addFplAJAX.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/addFPL/addFplAJAX.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret selection-end-line="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/require/header.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1420">
-                  <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -196,20 +35,6 @@
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>poppers</find>
-      <find>выход</find>
-      <find>bg-white</find>
-      <find>читать</find>
-      <find>numrows</find>
-      <find>dropdown-menu</find>
-      <find>popper</find>
-      <find>clos</find>
-      <find>notFPL</find>
-      <find>FPL</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -225,176 +50,23 @@
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="drack90" />
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="hdif" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/php/info/info_collaps.php" />
-        <option value="$PROJECT_DIR$/php/config/db.php" />
-        <option value="$PROJECT_DIR$/php/auth/check_auth.php" />
-        <option value="$PROJECT_DIR$/php/geopoint/search_point.php" />
-        <option value="$PROJECT_DIR$/php/geopoint/add_point.php" />
-        <option value="$PROJECT_DIR$/php/geopoint/point_search.php" />
-        <option value="$PROJECT_DIR$/php/geopoint/point_search_page.php" />
-        <option value="$PROJECT_DIR$/php/geopoint/geopoint.php" />
-        <option value="$PROJECT_DIR$/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/php/journal/addPostInDB.php" />
-        <option value="$PROJECT_DIR$/js/joirnal_js/journal_ajax.js" />
-        <option value="$PROJECT_DIR$/php/class/priorityColor.php" />
-        <option value="$PROJECT_DIR$/php/config/config.php" />
-        <option value="$PROJECT_DIR$/php/require/logout.php" />
-        <option value="$PROJECT_DIR$/php/auth/auth.php" />
-        <option value="$PROJECT_DIR$/php/info_block/info_collaps.php" />
-        <option value="$PROJECT_DIR$/php/journal/paginaton.php" />
-        <option value="$PROJECT_DIR$/php/journal/pagination.php" />
-        <option value="$PROJECT_DIR$/php/class/pagination.php" />
-        <option value="$PROJECT_DIR$/css/signin.css" />
-        <option value="$PROJECT_DIR$/php/require/login.php" />
-        <option value="$PROJECT_DIR$/css/dotMenu.css" />
-        <option value="$PROJECT_DIR$/css/threeDotMenu.css" />
-        <option value="$PROJECT_DIR$/js/threeDotMenu.js" />
-        <option value="$PROJECT_DIR$/js/popper.js" />
-        <option value="$PROJECT_DIR$/php/require/requireplugins.php" />
-        <option value="$PROJECT_DIR$/js/joгurnal_js/journal_ajax.js" />
-        <option value="$PROJECT_DIR$/php/journal/view_all_journal.php" />
-        <option value="$PROJECT_DIR$/php/journal/view_journal.php" />
-        <option value="$PROJECT_DIR$/php/fpl/deleteFpl/deleteFplProcessor.php" />
-        <option value="$PROJECT_DIR$/php/class/compileFpl.php" />
-        <option value="$PROJECT_DIR$/php/class/viewFpl.php" />
-        <option value="$PROJECT_DIR$/php/fpl/editFpl/editFpl.php" />
-        <option value="$PROJECT_DIR$/js/header/header_ajax.js" />
-        <option value="$PROJECT_DIR$/php/fpl/addFpl/addFplProcessor.php" />
-        <option value="$PROJECT_DIR$/php/fpl/findFpl/findFplProcessor.php" />
-        <option value="$PROJECT_DIR$/php/fpl/findFpl/findFplPage.php" />
-        <option value="$PROJECT_DIR$/js/findFpl/findFplAJAX.js" />
-        <option value="$PROJECT_DIR$/js/findFpl/editFplAJAX.js" />
-        <option value="$PROJECT_DIR$/php/fpl/editFpl/editFplForm.php" />
-        <option value="$PROJECT_DIR$/js/joгurnal_js/journal_refresh.js" />
-        <option value="$PROJECT_DIR$/php/class/deleteNullFromArray.php" />
-        <option value="$PROJECT_DIR$/php/fpl/editFpl/editFplProcessor.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/php/require/header.php" />
-        <option value="$PROJECT_DIR$/php/class/adminPanelButton.php" />
-        <option value="$PROJECT_DIR$/php/class/getUserTable.php" />
-        <option value="$PROJECT_DIR$/js/admin/admin.js" />
-        <option value="$PROJECT_DIR$/php/admin/adminpanel.php" />
-        <option value="$PROJECT_DIR$/php/admin/addUser.php" />
-        <option value="$PROJECT_DIR$/php/timetable/getTimetable.php" />
-      </list>
-    </option>
-  </component>
   <component name="JsBowerSettings">
     <node-interpreter value="node" />
     <bower-package value="" />
     <bower.json value="" />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="38" />
-    <option name="width" value="974" />
-    <option name="height" value="524" />
-  </component>
+  <component name="ProjectId" id="1WClDsxdzS2twnLyKzkvFwg6iK7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="addFPL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-              <item name="class" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-              <item name="information" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdif" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdif" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-              <item name="timetable" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -424,15 +96,15 @@
       <recent name="C:\OSPanel\domains\hdif\php\require" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -464,83 +136,13 @@
       <workItem from="1575045879026" duration="20446000" />
       <workItem from="1575537265774" duration="599000" />
       <workItem from="1575654556661" duration="9791000" />
-    </task>
-    <task id="LOCAL-00001" summary="- Написан AJAX обработчик для модуля journal (автоматическое обновление через 5 минут, отправка информации в БД)&#10;- Настроена кнопка &quot;Читать все&quot;, теперь она открывает файл, в котором отображаются все строки блока Journal">
-      <created>1569161190948</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1569161190948</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Добавлена кнопка &quot;на главную страницу&quot;">
-      <created>1569165359908</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1569165359908</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Добавлена кнопка &quot;на главную страницу&quot;">
-      <created>1569253662565</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1569253662565</updated>
-    </task>
-    <task id="LOCAL-00004" summary="используем класс parceRMK для того что бы исправить возврат коретки текста, возвращаемого из MySQL">
-      <created>1573127064317</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1573127064318</updated>
-    </task>
-    <task id="LOCAL-00005" summary="используем класс parceRMK для того что бы исправить возврат коретки текста, возвращаемого из MySQL">
-      <created>1573127154054</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1573127154054</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Исправленны подключаемые файлы для кооректного отображения стилей">
-      <created>1573127861101</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1573127861101</updated>
-    </task>
-    <task id="LOCAL-00007" summary="исправлен путь к изображению">
-      <created>1573127877871</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1573127877871</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Исправлен алгоритм отображения вывода FPLов в окно если указано &quot;только мои &quot; и если в искомых FPL-aх встречается &quot;не стандартный&quot; FPL">
-      <created>1573459094468</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1573459094468</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Исправлен класс для кнопки удаления.">
-      <created>1573554617746</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1573554617746</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Исправлен критерий начала события, на кнопку deletePost что бы скрипт не реагировал на все кнопки close">
-      <created>1573554657352</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1573554657352</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Изменены параметры кнопки удаления событий из журнала.">
-      <created>1573554703925</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1573554703925</updated>
+      <workItem from="1577204506986" duration="2743000" />
+      <workItem from="1577329624208" duration="35444000" />
+      <workItem from="1577940481615" duration="10772000" />
+      <workItem from="1578661052089" duration="100000" />
+      <workItem from="1578661348904" duration="630000" />
+      <workItem from="1579003046288" duration="616000" />
+      <workItem from="1579105604899" duration="11558000" />
     </task>
     <task id="LOCAL-00012" summary="Добавил загрузку jQuery на страницу при вызове, т.к. не активировались кнопки связанные с данными плагинами из-за того что происходит загрузка страници в уже загруженный DOM">
       <created>1573555065289</created>
@@ -759,39 +361,134 @@
       <option name="project" value="LOCAL" />
       <updated>1575663825583</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="refactor in OOP">
+      <created>1577427198525</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1577427198525</updated>
+    </task>
+    <task id="LOCAL-00044" summary="class for add fpl in DB">
+      <created>1577427554135</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1577427554135</updated>
+    </task>
+    <task id="LOCAL-00045" summary="class for add fpl in DB">
+      <created>1577498269951</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1577498269951</updated>
+    </task>
+    <task id="LOCAL-00046" summary="class for add fpl in DB">
+      <created>1577498278671</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1577498278671</updated>
+    </task>
+    <task id="LOCAL-00047" summary="class for add fpl in DB">
+      <created>1577498288479</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1577498288479</updated>
+    </task>
+    <task id="LOCAL-00048" summary="class for add fpl in DB">
+      <created>1577498306138</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1577498306138</updated>
+    </task>
+    <task id="LOCAL-00049" summary="class for add fpl in DB">
+      <created>1577498313941</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1577498313941</updated>
+    </task>
+    <task id="LOCAL-00050" summary="class for add fpl in DB">
+      <created>1577498329174</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1577498329176</updated>
+    </task>
+    <task id="LOCAL-00051" summary="изменил идентификатор кнопки">
+      <created>1577595023497</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1577595023497</updated>
+    </task>
+    <task id="LOCAL-00052" summary="изменил идентификатор кнопки, изменил загрузку скрипта">
+      <created>1577595061241</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1577595061241</updated>
+    </task>
+    <task id="LOCAL-00053" summary="убрал перезагрузку скрипта при каждом обновлении таблици">
+      <created>1577595103260</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1577595103260</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Исправленны функции добавления FPL и изображения">
+      <created>1577602694063</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1577602694063</updated>
+    </task>
+    <task id="LOCAL-00055" summary="class for add fpl in DB">
+      <created>1577968389553</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1577968389554</updated>
+    </task>
+    <task id="LOCAL-00056" summary="class for add fpl in DB">
+      <created>1577968450846</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1577968450846</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Начал делать функцию обновления пароля для пользователей.">
+      <created>1578066500448</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1578066500448</updated>
+    </task>
+    <task id="LOCAL-00058" summary="class for add fpl in DB">
+      <created>1578067342649</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1578067342649</updated>
+    </task>
+    <task id="LOCAL-00059" summary="class for change user password">
+      <created>1578201156860</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1578201156861</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Добавил поле для отображения регламентов">
+      <created>1579108745970</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1579108745970</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161434000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="38" width="1936" height="1050" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10104167" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32904148" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32943678" />
-      <window_info anchor="right" id="Database" order="3" weight="0.23288591" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32943678" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32963988" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="SQL Generator" order="12" weight="0.32904148" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="13" weight="0.32904148" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32943678" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.2832618" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32731137" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -812,39 +509,14 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Обработчик для редактирования FPL" />
-    <MESSAGE value="Исправленна Верстка, исправлен посиск по БД" />
-    <MESSAGE value=",tp bpvtytybq" />
-    <MESSAGE value="без изменений" />
-    <MESSAGE value="Убраны не задействованные зависимости" />
-    <MESSAGE value="Добавлен обработчик для удаления записей из БД" />
-    <MESSAGE value="Добавлнена ссылка, на открытия страницы поиска FPL без использования AJAX загрузчика в DOM #content_block." />
-    <MESSAGE value="Добавлена загрузка header файла т.к. открытие страницы будет происходить отдельно от сайта." />
-    <MESSAGE value="Исправил алгоритм добавления FPL объединил 2 поля альтернативных точек, &#10;для того, что бы планы, в которых алтернативный аэродром 1 или отсутствует тоже добавлялись" />
     <MESSAGE value="Исправленно отображение FPL согласно изменениям в БД (столбцы `alternative1` &#10;и `alternative2` были объединены в столбец `alternative`)" />
     <MESSAGE value="обработчик AJAX исправлен для обновления данных" />
     <MESSAGE value="Добавлена форма редактирования FPL, которые полныеы, а так же те, которые &#10;сохранены как обычный текст." />
@@ -861,7 +533,43 @@
     <MESSAGE value="Добавленна ссылка на имени пользователя для доступа в Админ Панель." />
     <MESSAGE value="создан тестовый файл для" />
     <MESSAGE value="создан тестовый алгоритм отрисовки таблицы получаемой из API &#10;Google SpreedSheet" />
-    <option name="LAST_COMMIT_MESSAGE" value="создан тестовый алгоритм отрисовки таблицы получаемой из API &#10;Google SpreedSheet" />
+    <MESSAGE value="refactor in OOP" />
+    <MESSAGE value="изменил идентификатор кнопки" />
+    <MESSAGE value="изменил идентификатор кнопки, изменил загрузку скрипта" />
+    <MESSAGE value="убрал перезагрузку скрипта при каждом обновлении таблици" />
+    <MESSAGE value="Исправленны функции добавления FPL и изображения" />
+    <MESSAGE value="Начал делать функцию обновления пароля для пользователей." />
+    <MESSAGE value="class for add fpl in DB" />
+    <MESSAGE value="class for change user password" />
+    <MESSAGE value="Добавил поле для отображения регламентов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил поле для отображения регламентов" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="625" y="159" key="CommitChangelistDialog2" timestamp="1579108744202">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="625" y="159" key="CommitChangelistDialog2/0.46.1920.1034@0.46.1920.1034" timestamp="1579108744202" />
+    <state x="740" y="319" key="FileChooserDialogImpl" timestamp="1579004231203">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="740" y="319" key="FileChooserDialogImpl/0.46.1920.1034@0.46.1920.1034" timestamp="1579004231203" />
+    <state x="775" y="382" key="NewPhpClassDialog" timestamp="1579106165959">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="775" y="382" key="NewPhpClassDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1579106165959" />
+    <state x="797" y="488" key="NewPhpFileDialog" timestamp="1579172174119">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="797" y="488" key="NewPhpFileDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1579172174119" />
+    <state x="552" y="297" key="Vcs.Push.Dialog.v2" timestamp="1579108901264">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="552" y="297" key="Vcs.Push.Dialog.v2/0.46.1920.1034@0.46.1920.1034" timestamp="1579108901264" />
+    <state x="666" y="389" key="com.intellij.ide.util.TipDialog" timestamp="1578661360479">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="666" y="389" key="com.intellij.ide.util.TipDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1578661360479" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -872,385 +580,6 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52020">
-          <caret line="3060" column="16" selection-start-line="3060" selection-start-column="16" selection-end-line="3060" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/bootstrap.bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25500">
-          <caret line="1504" column="61" selection-start-line="1504" selection-start-column="55" selection-end-line="1504" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/popper.js" />
-    <entry file="file://$PROJECT_DIR$/css/dotMenu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/threeDotMenu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/journal/view_all_journal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/journal/deletePostInJournal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/class/parceRMK.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="41" selection-start-line="17" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/class/viewFpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/joгurnal_js/journal_ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/fpl/editFpl/editFpl.php" />
-    <entry file="uml://JavaScript-modules-diagram/C:/OSPanel/domains/hdif">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JavaScript-modules-diagram</ID>
-          <OriginalElement>$PROJECT_DIR$</OriginalElement>
-          <nodes>
-            <node x="" y="">$PROJECT_DIR$/js/bootstrap.bundle.js#jquery#351;</node>
-            <node x="" y="">$PROJECT_DIR$/js/bootstrap.js#jquery#351;C:/OSPanel/domains/hdif/js/bootstrap.js#popper.js#370;</node>
-            <node x="" y="">jquery</node>
-            <node x="" y="">popper.js</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="193.0" y="95.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>All</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>Details</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://PHP/C:/OSPanel/domains/hdif">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>PHP</ID>
-          <OriginalElement>$PROJECT_DIR$</OriginalElement>
-          <nodes>
-            <node x="" y="">$PROJECT_DIR$/php</node>
-            <node x="" y="">$PROJECT_DIR$/js</node>
-            <node x="" y="">$PROJECT_DIR$/css</node>
-            <node x="" y="">$PROJECT_DIR$/img</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="66.0" y="89.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://PHP/C:/OSPanel/domains/hdif/php">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>PHP</ID>
-          <OriginalElement>$PROJECT_DIR$/php</OriginalElement>
-          <nodes>
-            <node x="" y="">$PROJECT_DIR$/php/geopoint</node>
-            <node x="" y="">$PROJECT_DIR$/php/config</node>
-            <node x="" y="">$PROJECT_DIR$/php/class</node>
-            <node x="" y="">$PROJECT_DIR$/php/require</node>
-            <node x="" y="">$PROJECT_DIR$/php/info_block</node>
-            <node x="" y="">$PROJECT_DIR$/php/fpl</node>
-            <node x="" y="">$PROJECT_DIR$/php/journal</node>
-            <node x="" y="">$PROJECT_DIR$/php/auth</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="150.0" y="176.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constants</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/fpl/deleteFpl/deleteFplProcessor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/fpl/findFpl/findFplPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/header/header_ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/findFpl/threeDotMenuJS.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/findFpl/findFplAJAX.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/class/deleteNullFromArray.php" />
-    <entry file="file://$PROJECT_DIR$/php/fpl/editFpl/editFplProcessor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="43" column="72" selection-start-line="43" selection-start-column="72" selection-end-line="43" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/fpl/editFpl/editFplForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/journal/addPostInDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/require/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/class/adminPanelButton.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="2" lean-forward="true" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/findFpl/editFplAJAX.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/joгurnal_js/journal_refresh.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/auth/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/fpl/addFpl/addFplProcessor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/geopoint/search_point.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.github/workflows/google.yml" />
-    <entry file="file://$PROJECT_DIR$/php/require/requireplugins.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" lean-forward="true" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/require/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1420">
-          <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/geopoint/add_point.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="19" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/geopoint/point_search_page.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/geopoint/geopoint.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="44" column="23" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="44" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/fpl/findFpl/findFplProcessor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/addFPL/addFplAJAX.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/admin/addUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/journal/view_journal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/class/pagination.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
-          <folding>
-            <element signature="e#25#32#1" expanded="true" />
-            <element signature="e#25#32#1" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/config/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/class/getUserTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#6#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/admin/adminpanel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" selection-start-line="1" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/timetable/getTimetable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="82" column="39" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/information/CHG.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
   </component>
 </project>

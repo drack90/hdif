@@ -1,5 +1,7 @@
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/auth/check_auth.php"; ?>
 
+
+
 <!doctype html>
 <html lang="ru">
 <head>
@@ -20,8 +22,23 @@
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/header.php'; ?> <!-- Подключаем header -->
 
 <main>
+    <div class="container">
+        <div class="reglaments">
+            <a href="#" class="reglaments__trigger">
+                <div class="bars"></div>
+            </a>
+
+                <div class="reglaments__content">
+
+                    <?php require $_SERVER['DOCUMENT_ROOT'] . "/php/reglaments/viewsReglaments.php"; ?>
+
+                </div>
+            </div>
+        </div>
+
     <div id="content_block">
-        <div id="journal"><?php require $_SERVER['DOCUMENT_ROOT'] . '/php/journal/view_journal.php'; ?>
+        <div id="journal">
+            <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/journal/view_journal.php'; ?>
 
         </div>
         <br>
@@ -30,19 +47,6 @@
             <div class="row">
 
                 <div class="col-1">
-                    <div class="container">
-                        <div class="reglaments">
-                            <a href="#" class="reglaments__trigger">
-                                <div class="bars"></div>
-                            </a>
-
-                            <div class="reglaments__content">
-
-                                <?php require $_SERVER['DOCUMENT_ROOT'] . "/php/reglaments/viewsReglaments.php"; ?>
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-10">
                     <div class="card-title text-center text-primary"><span class="h2">График работы</span>
@@ -61,8 +65,12 @@
 
  <br>
             <div id="info_collaps"><?php// require $_SERVER['DOCUMENT_ROOT'] . '/php/info_block/info_collaps.php';?></div>
-
-
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+        <div class="result" id="result">hello world!</div>
+    </div>
+</div>
     </div>
 </main>
 
