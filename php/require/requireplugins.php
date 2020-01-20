@@ -2,7 +2,6 @@
 <link href="<?php $_SERVER['DOCUMENT_ROOT'];?>/css/bootstrap.css" rel="stylesheet">
 <link href="<?php $_SERVER['DOCUMENT_ROOT'];?>/css/bootstrap-grid.css" rel="stylesheet">
 <link href="<?php $_SERVER['DOCUMENT_ROOT'];?>/css/scrolling-nav.css" rel="stylesheet">
-<link href="<?php $_SERVER['DOCUMENT_ROOT'];?>/css/reglaments.css" rel="stylesheet">
 <link href="<?php $_SERVER['DOCUMENT_ROOT'];?>/css/summernote.css" rel="stylesheet">
 
 
@@ -13,6 +12,7 @@
 <script src="<?php $_SERVER['DOCUMENT_ROOT'];?>/js/bootstrap.bundle.js"></script>
 <script src="<?php $_SERVER['DOCUMENT_ROOT'];?>/js/scrolling-nav.js"></script>
 <script src="<?php $_SERVER['DOCUMENT_ROOT'];?>/js/summernote.js"></script>
+
 
 
 

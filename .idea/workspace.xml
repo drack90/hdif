@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="317d239a-c81f-4c82-bfa4-fa8f3eb0c4dc" name="Default" comment="class for add fpl in DB">
-      <change afterPath="$PROJECT_DIR$/img/clear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/information/point_search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/reglaments/editReglamentsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/reglament/reglament.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/reglaments.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/reglaments.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/user/changeUserPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/user/changeUserPassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/class/changePassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class/changePassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/class/reglaments.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class/reglaments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/config/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/config/db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/fpl/addFpl/addFplController.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fpl/addFpl/addFplController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/fpl/addFpl/addFplProcessor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/reglaments.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/reglaments/editReglamentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/reglaments/editReglamentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/require/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/require/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/require/requireplugins.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/require/requireplugins.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +134,8 @@
       <workItem from="1578661052089" duration="100000" />
       <workItem from="1578661348904" duration="630000" />
       <workItem from="1579003046288" duration="616000" />
-      <workItem from="1579105604899" duration="11558000" />
+      <workItem from="1579105604899" duration="21958000" />
+      <workItem from="1579516962200" duration="4026000" />
     </task>
     <task id="LOCAL-00012" summary="Добавил загрузку jQuery на страницу при вызове, т.к. не активировались кнопки связанные с данными плагинами из-за того что происходит загрузка страници в уже загруженный DOM">
       <created>1573555065289</created>
@@ -546,10 +539,10 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="625" y="159" key="CommitChangelistDialog2" timestamp="1579108744202">
+    <state x="625" y="159" key="CommitChangelistDialog2" timestamp="1579348217545">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state x="625" y="159" key="CommitChangelistDialog2/0.46.1920.1034@0.46.1920.1034" timestamp="1579108744202" />
+    <state x="625" y="159" key="CommitChangelistDialog2/0.46.1920.1034@0.46.1920.1034" timestamp="1579348217545" />
     <state x="740" y="319" key="FileChooserDialogImpl" timestamp="1579004231203">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
@@ -558,18 +551,30 @@
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="775" y="382" key="NewPhpClassDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1579106165959" />
-    <state x="797" y="488" key="NewPhpFileDialog" timestamp="1579172174119">
+    <state x="797" y="488" key="NewPhpFileDialog" timestamp="1579366011649">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state x="797" y="488" key="NewPhpFileDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1579172174119" />
+    <state x="797" y="488" key="NewPhpFileDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1579366011649" />
     <state x="552" y="297" key="Vcs.Push.Dialog.v2" timestamp="1579108901264">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="552" y="297" key="Vcs.Push.Dialog.v2/0.46.1920.1034@0.46.1920.1034" timestamp="1579108901264" />
+    <state x="92" y="138" width="1736" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1579516733399">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="92" y="138" width="1736" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1579516733399" />
     <state x="666" y="389" key="com.intellij.ide.util.TipDialog" timestamp="1578661360479">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="666" y="389" key="com.intellij.ide.util.TipDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1578661360479" />
+    <state x="777" y="413" key="git4idea.ui.GitTagDialog" timestamp="1579541168390">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="777" y="413" key="git4idea.ui.GitTagDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1579541168390" />
+    <state x="601" y="289" width="700" height="530" key="recent.locations.popup" timestamp="1579540885125">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="601" y="289" width="700" height="530" key="recent.locations.popup/0.46.1920.1034@0.46.1920.1034" timestamp="1579540885125" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

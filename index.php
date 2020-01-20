@@ -22,19 +22,7 @@
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/header.php'; ?> <!-- Подключаем header -->
 
 <main>
-    <div class="container">
-        <div class="reglaments">
-            <a href="#" class="reglaments__trigger">
-                <div class="bars"></div>
-            </a>
 
-                <div class="reglaments__content">
-
-                    <?php require $_SERVER['DOCUMENT_ROOT'] . "/php/reglaments/viewsReglaments.php"; ?>
-
-                </div>
-            </div>
-        </div>
 
     <div id="content_block">
         <div id="journal">
@@ -68,7 +56,7 @@
 <div class="row">
     <div class="col-1"></div>
     <div class="col-5">
-        <div class="result" id="result">hello world!</div>
+
     </div>
 </div>
     </div>
@@ -79,7 +67,7 @@
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/php/require/footer.php'; ?>
 
 </footer>
-<script src="<?php $_SERVER['DOCUMENT_ROOT']; ?>/js/reglaments.js"></script>
+<script src="<?php $_SERVER['DOCUMENT_ROOT']; ?>/js/reglament/reglament.js"></script>
 
 
 </html>
