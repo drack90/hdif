@@ -1,9 +1,10 @@
 
 <link href="<?php $_SERVER['DOCUMENT_ROOT'];?>/css/bootstrap.css" rel="stylesheet">
+<link href="<?php $_SERVER['DOCUMENT_ROOT'];?>/css/timeTableStyle.css" rel="stylesheet">
+
 <link href="<?php $_SERVER['DOCUMENT_ROOT'];?>/css/bootstrap-grid.css" rel="stylesheet">
 <link href="<?php $_SERVER['DOCUMENT_ROOT'];?>/css/scrolling-nav.css" rel="stylesheet">
 <link href="<?php $_SERVER['DOCUMENT_ROOT'];?>/css/summernote.css" rel="stylesheet">
-<link href="<?php $_SERVER['DOCUMENT_ROOT'];?>/css/timeTableStyle.css" rel="stylesheet">
 
 
 

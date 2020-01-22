@@ -7,6 +7,7 @@ class timeTable
     public $lastName;
     public $month;
     public $numberMonth;
+//URL на publish в google spreedsheet https://script.google.com/macros/s/AKfycbwLJcZZlJZJYj4R3rER2NTk7L8nNqbNWVwS7xykyzO7SlvpOmMo/exec
 
 
 
@@ -59,9 +60,72 @@ class timeTable
         return $this->numberMonth;
     }
 
+    public function getDataString($numberMonth)
+    {
+        $dataLine = $this->result['result'][1];
+        unset ($this->result['result'][1]);
+        //определяем какой сейчас год
+        $year = date('Y');
+            //Проверяем массив с датами
+        foreach ($dataLine as $val) {
+
+            //если дата равняется дате "сегодня" отмечаем её красным цветом
+            if ($val == date('j')){
+                echo '<td bgcolor= #ff0000>';
+                echo '<b>'.$val.'</b>';
+                echo '</td>';
+                //определяем день недели каждой даты и если они входят в викенд - отмечаем желтым.
+            }elseif(date('N', mktime(0,0,0, $numberMonth, (int)$val, $year)) == 6
+                or
+                date('N', mktime(0,0,0, $numberMonth, (int)$val, $year)) ==7){
+                echo '<td bgcolor= #E4E533>';
+                echo $val;
+                echo '</td>';
+            }else{
+                echo '<td>';
+                echo $val;
+                echo '</td>';
+            }
+
+        }
+        echo '</tr>';
+    }
+
+    public function getNameAndGrafic()
+    {
+        foreach($this->result as $value){
 
 
 
+
+            foreach($value as $value){
+
+
+                if ($value[1] == $this->lastName){
+                    echo '<tr bgcolor="cyan">';
+                }else{
+                    echo '<tr>';
+                }
+                foreach($value as $val){
+
+                    switch ($val) {
+                        case $this->lastName:
+                            echo '<td bgcolor= #3ee664>';
+                            echo $val;
+                            echo '</td>';
+                            break;
+
+                        default:
+                            echo "<td>";
+                            echo $val;
+                            echo '</td>';
+                            break;
+                    }
+                }
+                echo '</tr>';
+            }
+        }
+    }
 
 
 

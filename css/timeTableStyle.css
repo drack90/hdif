@@ -1,11 +1,11 @@
 
 
-    .tableTimeTable {
+    TABLE {
         border-collapse: collapse; /* Убираем двойные линии между ячейками */
         /*  width: 600px; Ширина таблицы */
     }
 
-    .tableTD .tableTH {
+    TD, TH {
         font-size: 12px;
         border: 1px solid black; /* Параметры рамки */
         text-align: center; /* Выравнивание по центру */
@@ -14,7 +14,7 @@
         min-width: 15px;
     }
 
-    .tableTH {
+    TH {
         height: 40px; /* Высота ячеек */
         vertical-align: bottom; /* Выравнивание по нижнему краю */
         padding: 0; /* Убираем поля вокруг текста */
