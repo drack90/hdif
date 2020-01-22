@@ -15,7 +15,6 @@ class reglaments
 
         return $row['reglament'];
 
-        $stmt = null;
 
 
     }
@@ -32,10 +31,7 @@ class reglaments
         }else{
             return 'Регламенты обновлены';
         }
-        $getQuery = null;
-        $data = null;
-        $updateReglamentsSql = null;
-        $result = null;
+
     }
 
 

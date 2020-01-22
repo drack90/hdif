@@ -29,6 +29,9 @@
                         <a class="dropdown-item" href="<?php $_SERVER["DOCIMENT_ROOT"];?>/php/geopoint/point_search_page.php">Поиск геоточки</a>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" href="#reglament">Регламенты</a>
+                </li>
                 <!--<li class="nav-item dropdown">-->
                 <!--    <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Рабочая информация</a>-->
                 <!--    <div class="dropdown-menu" aria-labelledby="dropdown04">-->
@@ -152,7 +155,39 @@
 
 <!--модальное окно редактирования FPL-->
 
+<!--Модальное окно регламентов-->
 
+<div class="modal fade bd-example-modal-lg" id="reglament" tabindex="-1" role="dialog" aria-labelledby="reglamentLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h3 class="modal-title h3 mb-3 font-weight-normal" id="exampleModalLongTitle">Регламенты</h3>
+                <button type="button" class="close right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+                <div class="reglamentBody" id="reglamentBody">
+            <?php require $_SERVER['DOCUMENT_ROOT'] . "/php/reglaments/viewsReglaments.php";?>
+                </div>
+                <br><br>
+                <div class="row justify-content-between">
+                    <div class="col-6">
+                        <button id="editReglament" class="btn btn-primary" value="false">Редактировать</button>
+
+                        <button id="sendEditableReglament" class="btn btn-primary" style="display: none ">сохранить</button>
+                    </div>
+                    <div class="col-6-right">
+                        <button type="button" class="btn btn-secondary center" data-dismiss="modal" style="margin-right: 10px">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="<?php $_SERVER['DOCUMENT_ROOT'];?>/js/findFpl/findFplAJAX.js"></script>
 <script src="<?php $_SERVER['DOCUMENT_ROOT'];?>/js/addFPL/addFplAJAX.js"></script>
