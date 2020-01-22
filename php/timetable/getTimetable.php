@@ -15,6 +15,3 @@ $numberMonth = $data->setNumberMonth($month);
 $dataString = $data->getDataString($numberMonth);
 $nameAndGradic = $data->getNameAndGrafic();
 
-
-
-exit;

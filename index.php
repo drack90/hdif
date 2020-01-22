@@ -31,19 +31,21 @@
         </div>
         <br>
         <br>
-        <div class=".container" id='timeTable'>
-            <div class="row">
+        <div class=".container " id='timeTable'>
+            <div class="row ">
 
                 <div class="col-1">
                 </div>
-                <div class="col-10">
+                <div class="col-10 ">
                     <div class="card-title text-center text-primary"><span class="h2">График работы</span>
                     </div>
                     <br>
-                    <table class="tableTimeTable">
-                        <tr>
-                    <?php require $_SERVER['DOCUMENT_ROOT'].'/php/timetable/getTimeTable.php';?>
-                    </table>
+                    <div class="d-flex justify-content-center">
+                        <table class="tableTimeTable">
+                            <tr>
+                        <?php require $_SERVER['DOCUMENT_ROOT'].'/php/timetable/getTimeTable.php';?>
+                        </table>
+                    </div>
                         <div style="align-content: center;">
 
                     </div>

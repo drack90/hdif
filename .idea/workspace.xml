@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="317d239a-c81f-4c82-bfa4-fa8f3eb0c4dc" name="Default" comment="class for add fpl in DB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/timetable/getTimetable.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/timetable/getTimetable.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,15 +73,15 @@
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\hdif\php\config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\hdif\css" />
       <recent name="C:\OSPanel\domains\hdif\img" />
       <recent name="C:\OSPanel\domains\hdif\php\geopoint" />
       <recent name="C:\OSPanel\domains\hdif\php\auth" />
       <recent name="C:\OSPanel\domains\hdif\php\require" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OSPanel\domains\hdif\php\config" />
     </key>
   </component>
   <component name="ServiceViewManager">
