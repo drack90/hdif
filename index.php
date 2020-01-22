@@ -40,6 +40,11 @@
                     <div class="card-title text-center text-primary"><span class="h2">График работы</span>
                     </div>
                     <br>
+                    <div class="card-title text-center text-primary"><span class="h2"><?php
+                            $data = new timeTable();
+                            $month = $data->setMonth();
+                            echo $month[0];?></span>
+                    </div>
                     <div class="d-flex justify-content-center">
                         <table class="tableTimeTable">
                             <tr>
