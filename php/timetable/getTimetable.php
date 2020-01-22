@@ -13,5 +13,5 @@ $data = new timeTable();
 $month = $data->setMonth();
 $numberMonth = $data->setNumberMonth($month);
 $dataString = $data->getDataString($numberMonth);
-$nameAndGradic = $data->getNameAndGrafic();
+$nameAndGraphic = $data->getNameAndGraphic();
 

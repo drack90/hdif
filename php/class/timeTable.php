@@ -91,7 +91,7 @@ class timeTable
         echo '</tr>';
     }
 
-    public function getNameAndGrafic()
+    public function getNameAndGraphic()
     {
         foreach($this->result as $value){
 
