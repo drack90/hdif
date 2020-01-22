@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="317d239a-c81f-4c82-bfa4-fa8f3eb0c4dc" name="Default" comment="class for add fpl in DB">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/reglament/reglament.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/reglament/reglament.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/class/reglaments.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class/reglaments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/require/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/require/header.php" afterDir="false" />
-    </list>
+    <list default="true" id="317d239a-c81f-4c82-bfa4-fa8f3eb0c4dc" name="Default" comment="class for add fpl in DB" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -496,6 +491,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -504,6 +524,11 @@
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
