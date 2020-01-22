@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="317d239a-c81f-4c82-bfa4-fa8f3eb0c4dc" name="Default" comment="class for add fpl in DB" />
+    <list default="true" id="317d239a-c81f-4c82-bfa4-fa8f3eb0c4dc" name="Default" comment="class for add fpl in DB">
+      <change afterPath="$PROJECT_DIR$/css/timeTableStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/class/timeTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/require/requireplugins.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/require/requireplugins.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/timetable/getTimetable.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/timetable/getTimetable.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -69,15 +75,15 @@
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OSPanel\domains\hdif\php\config" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OSPanel\domains\hdif\img" />
       <recent name="C:\OSPanel\domains\hdif\css" />
+      <recent name="C:\OSPanel\domains\hdif\img" />
       <recent name="C:\OSPanel\domains\hdif\php\geopoint" />
       <recent name="C:\OSPanel\domains\hdif\php\auth" />
       <recent name="C:\OSPanel\domains\hdif\php\require" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\hdif\php\config" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -569,10 +575,10 @@
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="740" y="319" key="FileChooserDialogImpl/0.46.1920.1034@0.46.1920.1034" timestamp="1579004231203" />
-    <state x="775" y="382" key="NewPhpClassDialog" timestamp="1579106165959">
+    <state x="775" y="382" key="NewPhpClassDialog" timestamp="1579686735595">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state x="775" y="382" key="NewPhpClassDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1579106165959" />
+    <state x="775" y="382" key="NewPhpClassDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1579686735595" />
     <state x="797" y="488" key="NewPhpFileDialog" timestamp="1579366011649">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
@@ -597,6 +603,10 @@
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="601" y="289" width="700" height="530" key="recent.locations.popup/0.46.1920.1034@0.46.1920.1034" timestamp="1579540885125" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1579682516040">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.46.1920.1034@0.46.1920.1034" timestamp="1579682516040" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
