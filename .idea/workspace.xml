@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="317d239a-c81f-4c82-bfa4-fa8f3eb0c4dc" name="Default" comment="class for add fpl in DB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/timeTableStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/timeTableStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/class/timeTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class/timeTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/require/requireplugins.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/require/requireplugins.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/timetable/getTimetable.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/timetable/getTimetable.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
