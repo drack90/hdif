@@ -178,7 +178,7 @@
                     <div class="col-6">
                         <button id="editReglament" class="btn btn-primary" value="false">Редактировать</button>
 
-                        <button id="sendEditableReglament" class="btn btn-primary">сохранить</button>
+                        <button id="sendEditableReglament" class="btn btn-primary" style="display: none ">сохранить</button>
                     </div>
                     <div class="col-6-right">
                         <button type="button" class="btn btn-secondary center" data-dismiss="modal" style="margin-right: 10px">Закрыть</button>
