@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="317d239a-c81f-4c82-bfa4-fa8f3eb0c4dc" name="Default" comment="class for add fpl in DB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/auth/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/auth/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/class/timeTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class/timeTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/config/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/config/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/timetable/getTimetable.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/timetable/getTimetable.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -584,10 +588,10 @@
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="797" y="488" key="NewPhpFileDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1579366011649" />
-    <state x="552" y="297" key="Vcs.Push.Dialog.v2" timestamp="1579698593665">
+    <state x="552" y="297" key="Vcs.Push.Dialog.v2" timestamp="1579700908346">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state x="552" y="297" key="Vcs.Push.Dialog.v2/0.46.1920.1034@0.46.1920.1034" timestamp="1579698593665" />
+    <state x="552" y="297" key="Vcs.Push.Dialog.v2/0.46.1920.1034@0.46.1920.1034" timestamp="1579700908346" />
     <state x="92" y="138" width="1736" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1579695229692">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>

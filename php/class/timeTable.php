@@ -22,6 +22,12 @@ class timeTable
         $this->result = json_decode($this->result, true);
         $this->lastName = $_SESSION['lastName'];
 
+        //производим проверку, если у нас из БД не передается фамилия пользователя
+        //то передаём в переменную строку что нет имени пользователя, что бы не отрабатывался foreach и
+        //не закрашивал все пустые строки.
+        if ($this->lastName == NULL or $this->lastName == 'NULL'){
+            $this->lastName = 'No user last name';
+        }
 
 
     }
@@ -106,24 +112,20 @@ class timeTable
                 }else{
                     echo '<tr>';
                 }
-                foreach($value as $val){
-
-                    switch ($val) {
-                        case $this->lastName:
+                    foreach($value as $val){
+                        if ($this->lastName == $val){
                             echo '<td bgcolor= #3ee664>';
                             echo $val;
                             echo '</td>';
-                            break;
-
-                        default:
+                    }else{
                             echo "<td>";
                             echo $val;
                             echo '</td>';
-                            break;
                     }
+
+
                 }
-                echo '</tr>';
-            }
+            }echo '</tr>';
         }
     }
 

@@ -3,7 +3,7 @@
 $config = array(
     'title' => 'How do I fly',
     'db' => array(
-        'server' => 'localhost',
+        'server' => '192.168.0.105',
         'username' => 'root',
         'password' => '',
         'db_name' => 'hdif'

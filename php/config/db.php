@@ -20,7 +20,7 @@ if ($connection == false)
 
 
 $driver = 'mysql';
-$host = 'localhost';
+$host = '192.168.0.105';
 $db_name = 'hdif';
 $db_user = 'root';
 $db_password = '';

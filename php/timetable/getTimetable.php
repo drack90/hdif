@@ -15,3 +15,4 @@ $numberMonth = $data->setNumberMonth($month);
 $dataString = $data->getDataString($numberMonth);
 $nameAndGraphic = $data->getNameAndGraphic();
 
+var_dump($_SESSION);
